@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/download">
+        <ul>
+            {% for item in questions %}
+            <li>
+                <label>
+                    <input type="checkbox" name="selected_questions" value="{{ item.question }}">
+                    {{ item.question }}
+                </label>
+                <ul>
+                    {% for answer in item.answers %}
+                    <li>• {{ answer }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

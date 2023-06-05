@@ -1,0 +1,44 @@
+from flask import Flask, jsonify, send_file
+from jinja2 import Template
+import requests
+
+app = Flask(__name__)
+
+@app.route('/')
+def get_github_data():
+    # URL of the JSON file in the GitHub repository
+    url = "https://raw.githubusercontent.com/csfeeser/Python/master/demos/questions.json"
+    
+    try:
+        response = requests.get(url)
+        data = response.json()
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+    display= ""
+
+    for each in data:
+        # Define the template
+        template_string = '''
+        <QUESTION TYPE="mcone" TITLE="{{ question }}">
+        {% for answer in answers %}
+        <ANSWER ISCORRECT="false">{{ answer }}</ANSWER>
+        {% endfor %}
+        </QUESTION>
+        '''
+
+        # Create a Jinja2 template object
+        template = Template(template_string)
+
+        # Render the template with the data
+        output = template.render(**each)
+        display += output
+   
+    with open('data.txt', 'w') as file:
+        file.write(display)
+
+    # Send the file to the user for download
+    return send_file('data.txt', as_attachment=True)
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=2224, debug=True)

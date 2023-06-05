@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<POLL TYPE="named" SHOWTIMER="no" ALARM="0:0" NOANSWER="yes" SHOWRESPONSE="yes">
+
+{% for item in yaml_data %}
+    {% if item.question in questions %}
+        <QUESTION TYPE="mcone" TITLE="{{ item.question|escape }}">
+        {% for answer in item.answers %}
+            <ANSWER ISCORRECT="false">{{ answer|escape }}</ANSWER>
+        {% endfor %}
+        </QUESTION>
+    {% endif %}
+{% endfor %}
+
+<QUESTION TYPE="mcone" TITLE="How was the pace of class yesterday?">
+    <ANSWER ISCORRECT="false">😒 Circumstances beyond my control had me distracted, so I could not say for sure.</ANSWER>
+    <ANSWER ISCORRECT="false">😫 Too fast!</ANSWER>
+    <ANSWER ISCORRECT="false">😅 Fast, but I was keeping up!</ANSWER>
+    <ANSWER ISCORRECT="false">😃 Good! Not too fast or too slow!</ANSWER>
+    <ANSWER ISCORRECT="false">🙂 Slow, but the challenges are keeping my interest, so it's OK!</ANSWER>
+    <ANSWER ISCORRECT="false">🥱 Too slow for me.</ANSWER>
+</QUESTION>
+
+<QUESTION TYPE="mcone" TITLE="How difficult was class yesterday?">
+    <ANSWER ISCORRECT="false">😒 Circumstances beyond my control had me distracted, so I could not say for sure.</ANSWER>
+    <ANSWER ISCORRECT="false">😫 Way too advanced...</ANSWER>
+    <ANSWER ISCORRECT="false">😅 Very challenging, but I was keeping up!</ANSWER>
+    <ANSWER ISCORRECT="false">😃 Just right!</ANSWER>
+    <ANSWER ISCORRECT="false">🙂 Easy, but the challenges are keeping me engaged!</ANSWER>
+    <ANSWER ISCORRECT="false">🥱 Far too easy.</ANSWER>
+</QUESTION>
+
+<QUESTION TYPE="text" TITLE="Welcome back to training! Do you have any questions, requests, or issues to share?">
+</QUESTION>
+
+</POLL>

@@ -1,35 +1,35 @@
 - question: "A container is built according to the specs of a(n):"
   answers:
-  - answer: "blueprint"
-  - answer: "Dockerfile"
-  - answer: "image"
+  - "blueprint"
+  - "Dockerfile"
+  - "image"
   day: 2
 
 - question: "A dev can simply make a `git push` to their SCM repository and that could trigger a Jenkins project to run. What would have to be included for this to occur?"
   answers:
-  - answer: "a plugin"
-  - answer: "a webhook"
-  - answer: "an SSH key"
+  - "a plugin"
+  - "a webhook"
+  - "an SSH key"
   day: 2
 
 - question: "What object exists to keep a record of how a task ran?"
   answers:
-  - answer: "a workspace"
-  - answer: "a project"
-  - answer: "a build"
+  - "a workspace"
+  - "a project"
+  - "a build"
   day: 2
 
 - question: "Which of the following statements about Jenkins is TRUE?"
   answers:
-  - answer: "Jenkins can read in code from the SCM automatically once set up."
-  - answer: "Devs can version control their code with the SCM as they continue to make improvements and test those improvements with Jenkins."
-  - answer: "Finished code can be merged into the main/production branch in the SCM; Jenkins can assist with this and enable Continuous Integration/Deployment."
-  - answer: "All the above are true :)"
+  - "Jenkins can read in code from the SCM automatically once set up."
+  - "Devs can version control their code with the SCM as they continue to make improvements and test those improvements with Jenkins."
+  - "Finished code can be merged into the main/production branch in the SCM; Jenkins can assist with this and enable Continuous Integration/Deployment."
+  - "All the above are true :)"
   day: 2
 
 - question: "Containers that are spun up solely by Jenkins for the purpose of testing code (and are then discarded) are an example of:"
   answers:
-  - answer: "Controllers"
-  - answer: "Agents"
-  - answer: "Pipelines"
+  - "Controllers"
+  - "Agents"
+  - "Pipelines"
   day: 2

@@ -1,30 +1,30 @@
 - question: "Kubernetes enables a microservice architecture... which means what, exactly?"
   answers:
-  - answer: "The application is separated into individual components, each put into a container-- these pieces add up to the whole."
-  - answer: "Putting all our application's code in one giant block."
-  - answer: "Breaking our code into big chunks so they aren't quite as unwieldy."
+  - "The application is separated into individual components, each put into a container-- these pieces add up to the whole."
+  - "Putting all our application's code in one giant block."
+  - "Breaking our code into big chunks so they aren't quite as unwieldy."
   day: 2
 
 - question: "Which of these is correctly listed from SMALLEST to LARGEST?"
   answers:
-  - answer: "Container < Pod < Node < Cluster"
-  - answer: "Cluster < Node < Pod < Container"
-  - answer: "Node < Cluster < Container < Pod"
+  - "Container < Pod < Node < Cluster"
+  - "Cluster < Node < Pod < Container"
+  - "Node < Cluster < Container < Pod"
   day: 2
 
 - question: "Which of these Controller Node components keeps track of the state of the cluster (names/status of pods, namespaces, etc.)"
   answers:
-  - answer: "scheduler"
-  - answer: "etcd"
-  - answer: "controller manager"
+  - "scheduler"
+  - "etcd"
+  - "controller manager"
   day: 2
 
 - question: "Which tool will enable you to create your own Kubernetes cluster?"
   answers:
-  - answer: "kubectl"
-  - answer: "kubelet"
-  - answer: "kubeadm"
-  - answer: "kubefilter"
+  - "kubectl"
+  - "kubelet"
+  - "kubeadm"
+  - "kubefilter"
   day: 2
 
 - question: "After the initial controller node is created in a new cluster, how are additional worker nodes into the cluster?"
@@ -32,42 +32,42 @@
 
 - question: "Which tool will enable you to save/restore etcd from a previous state?"
   answers:
-  - answer: "etcd snapshot"
-  - answer: "etcd collect"
-  - answer: "etcd archive"
-  - answer: "etcd cache"
+  - "etcd snapshot"
+  - "etcd collect"
+  - "etcd archive"
+  - "etcd cache"
   day: 3
 
 - question: "Which of the following is NOT a necessary step in upgrading the Kubernetes version of a node?"
   answers:
-  - answer: "uncordon the node"
-  - answer: "download kubeadm at matching version"
-  - answer: "drain the node"
-  - answer: "hold kubeadm/kubelet/kubectl at matching versions"
-  - answer: "all the above are correct"
+  - "uncordon the node"
+  - "download kubeadm at matching version"
+  - "drain the node"
+  - "hold kubeadm/kubelet/kubectl at matching versions"
+  - "all the above are correct"
   day: 3
 
 - question: "When creating a Dockerfile to build a new image, which verb will specify the container's port number?"
   answers:
-  - answer: "FROM"
-  - answer: "ADD"
-  - answer: "CMD"
-  - answer: "EXPOSE"
+  - "FROM"
+  - "ADD"
+  - "CMD"
+  - "EXPOSE"
   day: 3
 
 - question: "Which of these is NOT a reason to use namespaces?"
   answers:
-  - answer: "It sets boundaries in the cluster, such as between teams or admin"
-  - answer: "You can put a quota on top of them to prevent overuse of resources"
-  - answer: "Able to reuse names of Pods"
-  - answer: "Namespaces keep a running log of who has been making changes"
+  - "It sets boundaries in the cluster, such as between teams or admin"
+  - "You can put a quota on top of them to prevent overuse of resources"
+  - "Able to reuse names of Pods"
+  - "Namespaces keep a running log of who has been making changes"
   day: 3
 
 - question: "What do we call the blueprint that is used to create Kubernetes objects?"
   answers:
-  - answer: "Manifest"
-  - answer: "Image"
-  - answer: "Blueprint"
+  - "Manifest"
+  - "Image"
+  - "Blueprint"
   day: 3
 
 - question: "When using kubeadm, how are additional worker nodes added into the cluster?"
@@ -75,89 +75,89 @@
 
 - question: "Look at Figure 1 on the screen. The user BOB has been assigned the role DEMOROLE. Which of the following commands can BOB ***NOT*** do?"
   answers:
-  - answer: "kubectl create -f pod.yml -n prod"
-  - answer: "kubectl get deploy -n prod"
-  - answer: "kubectl delete services -n prod"
-  - answer: "kubectl get secrets -n prod"
+  - "kubectl create -f pod.yml -n prod"
+  - "kubectl get deploy -n prod"
+  - "kubectl delete services -n prod"
+  - "kubectl get secrets -n prod"
   day: 4
 
 - question: "A set of rules that instructs an account what it is allowed to do in a SPECIFIC NAMESPACE is called a:"
   answers:
-  - answer: "role"
-  - answer: "rolebinding"
-  - answer: "clusterrole"
-  - answer: "clusterrolebinding"
+  - "role"
+  - "rolebinding"
+  - "clusterrole"
+  - "clusterrolebinding"
   day: 4
 
 - question: "Which of the following WON'T cause a problem in how you configure your Readiness and Liveness probes?"
   answers:
-  - answer: "Not giving the container enough time to respond"
-  - answer: "Giving the wrong endpoint/file for the probe to target/'poke'"
-  - answer: "Assigning both Readiness and Liveness probes to the same container"
+  - "Not giving the container enough time to respond"
+  - "Giving the wrong endpoint/file for the probe to target/'poke'"
+  - "Assigning both Readiness and Liveness probes to the same container"
   day: 4
 
 - question: "What container parameter is used to guarantee that a container has a certain amount of resources reserved/guaranteed for its use?"
   answers:
-  - answer: "requests"
-  - answer: "resourcequota"
-  - answer: "limits"
+  - "requests"
+  - "resourcequota"
+  - "limits"
   day: 4
 
 - question: "What command will show you the resource consumption of Kubernetes objects?"
   answers:
-  - answer: "kubectl top"
-  - answer: "kubectl resource"
-  - answer: "kubectl describe"
+  - "kubectl top"
+  - "kubectl resource"
+  - "kubectl describe"
   day: 4
 
 - question: "You want to set up your namespace so that all created pods automatically have a default requests/limits parameter. Which tool would you use?"
   answers:
-  - answer: "I am confident the answer is RESOURCE QUOTA."
-  - answer: "Not super confident, but... RESOURCE QUOTA?"
-  - answer: "I am confident the answer is LIMIT RANGE."
-  - answer: "Not super confident, but... LIMIT RANGE?"
+  - "I am confident the answer is RESOURCE QUOTA."
+  - "Not super confident, but... RESOURCE QUOTA?"
+  - "I am confident the answer is LIMIT RANGE."
+  - "Not super confident, but... LIMIT RANGE?"
   day: 4
 
 - question: "How can files be added to containers in a way that is EASY/FAST to update/replace them AND persist across container reboot?"
   answers:
-  - answer: "kubectl cp"
-  - answer: "configmap"
-  - answer: "rebuild the image"
+  - "kubectl cp"
+  - "configmap"
+  - "rebuild the image"
   day: 4
 
 - question: "Where are container logs stored?"
   answers:
-  - answer: "In the container."
-  - answer: "In the Pod."
-  - answer: "etcd"
-  - answer: "On the node."
+  - "In the container."
+  - "In the Pod."
+  - "etcd"
+  - "On the node."
   day: 5
 
 - question: "What part of an object's metadata serves as a 'tag,' allowing you to group, view, and operate many objects at once?"
   answers:
-  - answer: "label"
-  - answer: "annotation"
-  - answer: "name"
+  - "label"
+  - "annotation"
+  - "name"
   day: 5
 
 - question: "Which of the following statements about deployments is FALSE:"
   answers:
-  - answer: "deployments are easy to scale up or down"
-  - answer: "deployments are able to change out pods with no downtime"
-  - answer: "deployments are able to roll back to previous versions"
-  - answer: "deployments don't replace their pods if they happen to be deleted"
+  - "deployments are easy to scale up or down"
+  - "deployments are able to change out pods with no downtime"
+  - "deployments are able to roll back to previous versions"
+  - "deployments don't replace their pods if they happen to be deleted"
   day: 5
 
 - question: "Objects like deployments and services rely on ______ to identify Pods that belong to them."
   answers:
-  - answer: "Labels"
-  - answer: "Annotations"
-  - answer: "Revisions"
-  - answer: "Replicas"
+  - "Labels"
+  - "Annotations"
+  - "Revisions"
+  - "Replicas"
   day: 5
 
 - question: "Using 'kubectl scale deploy nginx --replicas=3' will not only scale that deployment's replica count to three, it will edit the manifest (nginxdeploy.yml, for example) on your computer."
   answers:
-  - answer: "TRUE"
-  - answer: "FALSE"
+  - "TRUE"
+  - "FALSE"
   day: 5

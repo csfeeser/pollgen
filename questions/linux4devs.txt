@@ -1,0 +1,96 @@
+- question: "What command would you use to recall your previous commands?"
+  answers:
+  - answer: "recall"
+  - answer: "history"
+  - answer: "ls"
+  - answer: "double tab"
+  day: 2
+
+- question: "What command would you use to list the contents of a directory?"
+  answers:
+  - answer: "tab"
+  - answer: "cd"
+  - answer: "ls"
+  - answer: "touch"
+  day: 2
+
+- question: "What command would you use to delete a file?"
+  answers:
+  - answer: "delete"
+  - answer: "remove"
+  - answer: "rm"
+  - answer: "right-click then delete <-- (hint THIS IS LINUX, we do NOT click here! :)"
+  day: 2
+
+- question: "You are working on a problem and realize that you need to watch the logs in real time, what command will you use?"
+  answers:
+  - answer: "watch"
+  - answer: "say linux-wan-kenobi, you are my only hope"
+  - answer: "tail -f"
+  - answer: "vim   /var/log/syslog"
+  day: 2
+
+- question: "You need to connect to a remote host, so you decide to use SSH and there is no .ssh/config file. Which command is the correct format?"
+  answers:
+  - answer: "ssh bender@10.10.2.3 -i ~/.ssh/id_rsa"
+  - answer: "ssh bender@10.10.2.3 "
+  - answer: "ssh bender"
+  - answer: "ssh 10.10.2.3"
+  day: 2
+
+- question: "You need to move an entire directory of content to a remote host, which utility is best suited for this?"
+  answers:
+  - answer: "ssh"
+  - answer: "scp"
+  - answer: "rsync"
+  - answer: "megasync"
+  - answer: "click and drag (hint- In Linux, we do NOT click and drag :)"
+  day: 2
+
+- question: "You need to have multiple bash sessions open, what tool will you use?"
+  answers:
+  - answer: "many putty windows (ahhh please do NOT go for this one)"
+  - answer: "tmux"
+  - answer: "bash"
+  - answer: "vim"
+  day: 2
+
+- question: "What is this character called and what does it do? \"|\""
+  answers:
+  - answer: "bar, and is used for comparisons"
+  - answer: "pipe, and used for directing outputs from one program to the input of another"
+  - answer: "redirect, and used to redirect I/O"
+  - answer: "This character is never used in Linux."
+  day: 3
+
+- question: "What command is used to change the owner of a file?"
+  answers:
+  - answer: "owner"
+  - answer: "chown"
+  - answer: "chmod"
+  - answer: "touch"
+  day: 3
+
+- question: "What is a dependency in Linux?"
+  answers:
+  - answer: "Software necessary to support the software you want to run"
+  - answer: "A permissions error"
+  - answer: "Not handled with apt, dnf, or yum installations"
+  - answer: "The Linux kernel"
+  day: 3
+
+- question: "What is UGO in Linux? (choose two)"
+  answers:
+  - answer: "Permission categories"
+  - answer: "user, group, and ... owner?"
+  - answer: "broken down further into read, write, and execute"
+  - answer: "Describe the owner of the file"
+  day: 3
+
+- question: "What command would you use to find all files the begin with \"host\", starting from the root directory?"
+  answers:
+  - answer: "find / -name hosts"
+  - answer: "find / -name hosts*"
+  - answer: "tree -f hosts*"
+  - answer: "ls hosts*"
+  day: 3

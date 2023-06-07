@@ -1,0 +1,131 @@
+- question: "If you were to slice the \"heroes\" list in Figure 2, which would return \"Hulk\"?"
+  answers:
+    - heroes[1]
+    - heroes[2]
+    - heroes[3]
+  day: 2
+
+- question: "In Figure 3, how would you return \"Thanos\" from this dictionary?"
+  type: text
+  day: 2
+
+- question: "Communication with APIs is a \"send/receive\" relationship. Which two terms describe that?"
+  answers:
+    - Call/Return
+    - Demand/Reply
+    - Apply/Feedback
+    - Request/Response
+  day: 2
+
+- question: "Which status code means \"OK!\" or \"success\"?"
+  answers:
+    - 200
+    - 300
+    - 400
+    - 500
+  day: 2
+
+- question: "TRUE OR FALSE: You can send any kind of request to an API as long as you are authenticated and have the correct path."
+  answers:
+    - True
+    - False
+  day: 3
+
+- question: "Which request is most commonly accepted by APIs?"
+  answers:
+    - GET
+    - PUT
+    - POST
+    - DELETE
+  day: 3
+
+- question: "Which of the following is an INCORRECT comparison between Python data and JSON?"
+  answers:
+    - "JSON ONLY uses \"double quotes,\" Python can use either."
+    - "True/False = Python, true/false = JSON"
+    - "None = Python, null = JSON"
+    - "{\"key\":\"value\"} is a DICTIONARY in Python and an ARRAY in JSON"
+  day: 3
+
+- question: "\"Open APIs\" are called such because they don't require ________ to access:"
+  answers:
+    - Authentication
+    - Authorization
+    - Admission
+  day: 3
+
+- question: "In Figure 1, what is \"x\"?"
+  answers:
+    - JSON
+    - HTTP response
+    - HTTP request
+    - Python data
+  day: 3
+
+- question: "Looking at the code on screen, what would the output of this command return: curl localhost:2224/example1/PythonStudent"
+  answers:
+    - "Hello Happy!"
+    - "Hello Slappy!"
+    - "Hello PythonStudent!"
+  day: 4
+
+- question: "If a GET request were sent to /example2, what requests/response codes would you see?"
+  answers:
+    - "GET /example2 200"
+    - "GET /example2 300, GET /example1 300"
+    - "GET /example2 300, GET /example1 200"
+  day: 4
+
+- question: "If a POST request were sent to /example3, what response code would you see?"
+  answers:
+    - "something in the 200 range"
+    - "something in the 300 range"
+    - "something in the 400 range"
+    - "something in the 500 range"
+  day: 4
+
+- question: "What would you see in aux1 if you went to /example3?"
+  answers:
+    - "Hello, world!"
+    - "World, hello!"
+    - "\"Hello, world!\" AND \"World, hello!\""
+  day: 4
+
+- question: "If you needed to know if the incoming request was a GET or a POST, which \"request\" attribute would you use?"
+  answers:
+    - "request.form"
+    - "request.method"
+    - "request.args"
+  day: 4
+
+- question: "In a jinja2 template, which set of punctuation needs to surround VARIABLES?"
+  answers:
+    - "{% %}"
+    - "{ }"
+    - "{{ }}"
+    - "[[ ]]"
+  day: 5
+
+- question: "In a jinja2 template, which set of punctuation needs to surround EXPRESSIONS, like for loops or if statements?"
+  answers:
+    - "{% %}"
+    - "{ }"
+    - "{{ }}"
+    - "[[ ]]"
+  day: 5
+
+- question: "Cookies and sessions are both used for data storage, in their way. Which is stored on the CLIENT side?"
+  answers:
+    - "cookies"
+    - "sessions"
+  day: 5
+
+- question: "Are cookies a secure place to store sensitive data? Why or why not?"
+  day: 5
+
+- question: "When making changes to the content of a table in sqlite3, what MUST you do afterward?"
+  answers:
+    - ".execute()"
+    - ".close()"
+    - ".commit()"
+  day: 5

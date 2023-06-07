@@ -1,0 +1,138 @@
+- question: "When running an Ad-Hoc Ansible command, you are running Ansible without a _______ :"
+  answers:
+  - answer: "ansible.cfg"
+  - answer: "inventory file"
+  - answer: "playbook"
+  - answer: "module"
+  day: 2
+
+- question: "What file lists connection info (IP address, user name) for hosts and groups of hosts?"
+  answers:
+  - answer: "playbook"
+  - answer: "module"
+  - answer: "inventory"
+  - answer: "ansible.cfg"
+  day: 2
+
+- question: "If you wanted to set a default location for where Ansible looks for your inventory file, where would you add that rule?"
+  answers:
+  - answer: "playbook"
+  - answer: "module"
+  - answer: "inventory"
+  - answer: "ansible.cfg"
+  day: 2
+
+- question: "List the following from LARGEST to SMALLEST:"
+  answers:
+  - answer: "Plays, Playbooks, Tasks"
+  - answer: "Tasks, Playbooks, Plays"
+  - answer: "Playbooks, Plays, Tasks"
+  day: 2
+
+- question: "In Figure 1 on Chad's screen, line 4 is a _______, line 5-6 are both a _______, and line 7 is a _______."
+  answers:
+  - answer: "module, parameter, keyword"
+  - answer: "module, keyword, parameter"
+  - answer: "keyword, parameter, module"
+  day: 2
+
+- question: "The raw, shell, and command modules all fail IDEMPOTENCE. What is idempotence in Ansible?"
+  answers:
+  - answer: "Makes a change the first time ONLY"
+  - answer: "Makes a change every time."
+  - answer: "Throws an error if a change must be made more than once."
+  day: 3
+
+- question: "Uh oh! Your host doesn't have Python installed! What module will you likely use to automate installing Python on hosts?"
+  answers:
+  - answer: "apt"
+  - answer: "yum"
+  - answer: "raw"
+  - answer: "lineinfile"
+  day: 3
+
+- question: "When you use a LOOP, what is the variable that represents each item being returned from the loop?"
+  answers:
+  - answer: "x"
+  - answer: "item"
+  - answer: "element"
+  - answer: "state"
+  day: 3
+
+- question: "What keyword allows us to set a condition that must be met before a task runs?"
+  answers:
+  - answer: "if"
+  - answer: "try"
+  - answer: "when"
+  - answer: "check"
+  day: 3
+
+- question: "Which of the modules that we learned about yesterday seems like it'd be most useful to you? Can you provide a use case of where you think you could use it?"
+  day: 3
+
+- question: "Take a look at Figure 1 on Chad's screen. With those four variables defined at the top, which of the four lines in the Jinja2 template WILL NOT be printed in the final document?"
+  answers:
+  - answer: "Line 1"
+  - answer: "Line 2"
+  - answer: "Line 3"
+  - answer: "Line 4"
+  day: 4
+
+- question: "What’s the primary purpose of putting tags on tasks?"
+  answers:
+  - answer: "Adding metadata identifying what that task does"
+  - answer: "Allows selection of what tasks do and do not run"
+  - answer: "Gives the task a name to differentiate between other tasks"
+  day: 4
+
+- question: "When does a handler task run?"
+  answers:
+  - answer: "Every time the 'tasks' section finishes."
+  - answer: "Only when notified by a task."
+  - answer: "Only when notified by a task AND that task created a change/turned yellow."
+  - answer: "Before the 'tasks' section begins."
+  day: 4
+
+- question: "When you’re looking to download a new “toolkit” full of additional modules, you will likely download a _____:"
+  answers:
+  - answer: "Role"
+  - answer: "Collection"
+  - answer: "Ansible Galaxy"
+  day: 4
+
+- question: "One of the most secure methods of entering something sensitive like a password that we've learned SO FAR would be:"
+  answers:
+  - answer: "using vars_prompt"
+  - answer: "putting the password in the inventory file, unencrypted"
+  - answer: "putting the password in the playbook vars, unencrypted"
+  day: 4
+
+- question: "The Ansible controller that runs against a Dell EMC PowerEdge server would need the OMSDK installed via pip and the 'dellemc.openmanage' collection installed. What would the hosts/connection be in that playbook?"
+  answers:
+  - answer: "dellemc, http"
+  - answer: "localhost, local"
+  - answer: "openmanage, ssh"
+  - answer: "dellemc, network_cli"
+  day: 5
+
+- question: "Why must we use a network_cli connection when using Ansible to configure most network devices?"
+  answers:
+  - answer: "network devices can't receive SSH commands"
+  - answer: "expect scripting is inefficient, so we don't use it"
+  - answer: "network devices' OS doesn't permit Python to be installed"
+  - answer: "because everything has to be SO DARN DIFFICULT these days"
+  day: 5
+
+- question: "What is a ROLE in Ansible?"
+  answers:
+  - answer: "A highly organized playbook that can be imported into other playbooks."
+  - answer: "A group of modules grouped together in a single collection for easy download/installation."
+  - answer: "The plugin that allows for the Ansible Controller to talk to all kinds of hosts (Linux, network devices, cloud, etc.)"
+  day: 5
+
+- question: "What is ansible-vault?"
+  answers:
+  - answer: "An encryption tool for files or strings that teams use for their playbooks."
+  - answer: "A storage tool that makes playbooks reusable by teams"
+  - answer: "A security tool that hides files so they are only detectable by the playbook."
+  day: 5

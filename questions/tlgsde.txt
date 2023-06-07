@@ -1,0 +1,321 @@
+- question: "Which of the following lines of code would work? (would NOT return an error)"
+  answers:
+    - "123.upper()"
+    - "abc.upper()"
+    - "'123'.upper()"
+    - "3.14.upper()"
+  day: 2
+
+- question: "In Figure 1 on the instructor's screen, which would return 'Hulk'?"
+  answers:
+    - "marvel[0]"
+    - "marvel[1]"
+    - "marvel[2]"
+    - "marvel[3]"
+    - "marvel[4]"
+  day: 2
+
+- question: "In Figure 2 on the instructor's screen, which would return 'Steve Ditko' from the dictionary 'spidey'?"
+  answers:
+    - "spidey['creators'][0]"
+    - "spidey[Creators][1]"
+    - "spidey['creators'][1]"
+    - "spidey['Creators'][1]"
+  day: 2
+
+- question: "If you were looking to redirect output from one command to another command (something like 'less,' perhaps) which of the following would you use?"
+  answers:
+    - ">"
+    - ">>"
+    - "2>"
+    - "|"
+  day: 2
+
+- question: "What directory is also known as 'the abyss' or 'the void' in Linux?"
+  answers:
+    - "/dev/null"
+    - "/dev/nil"
+    - "/dev/none"
+    - "/dev/solongandthanksforallthefish"
+  day: 2
+
+- question: "Look at Figure 3 on the instructor's screen. In the usage of the fictional command 'zork,' which of those options are OPTIONAL?"
+  answers:
+    - "a"
+    - "b"
+    - "GAMETITLE"
+  day: 2
+
+- question: "Type ls --help at your command line. What would the command 'ls -harl' do?"
+  day: 2
+
+- question: "If I wanted all new users in a Linux filesystem to have certain files/directories present in their home directories, what would I edit to make that happen?"
+  answers:
+    - "/etc/login.defs"
+    - "/etc/passwd"
+    - "/etc/shadow"
+    - "/etc/skel/"
+  day: 3
+
+- question: "If I create a new user named 'admin', what GROUP will that user automatically belong to?"
+  answers:
+    - "root"
+    - "admin"
+    - "impossible to know"
+  day: 3
+
+- question: "In Figure 1 on your instructor's screen, what is this command doing? (you may use your command line to figure it out)"
+  day: 3
+
+- question: "Read Figure 2. What do you predict will be the output?"
+  answers:
+    - "Confidently, 'You are sure to win!'"
+    - "Not confidently... 'You are sure to win!'"
+    - "Confidently, 'You are a spineless pale pathetic lot.'"
+    - "Not confidently, 'You are a spineless pale pathetic lot.'"
+  day: 3
+
+- question: "Excited to see your 'IF-LOGIC' projects today! What topic did you wind up choosing?"
+  day: 3
+
+- question: "In Figure 1, what would the CLASS of the variable 'x' be?"
+  answers:
+    - "List"
+    - "Dictionary"
+    - "String"
+  day: 4
+
+- question: "In Figure 1, what would the output of this for loop be?"
+  answers:
+    - "letter letter"
+    - "a b"
+    - "letter a letter b"
+  day: 4
+
+- question: "Will the code in Figure 2 work?"
+  answers:
+    - "Confidently, yes."
+    - "Not confidently... yes."
+    - "Confidently, no."
+    - "Not confidently... no."
+  day: 4
+
+- question: "In Figure 3, what CLASS is 'zoink'?"
+  answers:
+    - "file object"
+    - "string"
+    - "list"
+  day: 4
+
+- question: "In Figure 4, what will the output be?"
+  answers:
+    - "Python is awesome!"
+    - "awesome is Python!"
+    - "is Python awesome!"
+  day: 4
+
+- question: "In Figure 1, what should 'x' be?"
+  answers:
+    - "a URL"
+    - "JSON"
+    - "a dictionary"
+  day: 5
+
+- question: "In Figure 1, if you want to grab the JSON attached to the response and return it as Python data, what method should 'Y' be?"
+  answers:
+    - ".get()"
+    - ".json()"
+    - ".content()"
+  day: 5
+
+- question: "No worries if you don't know the answer; give a guess if not sure! But which of the following is NOT an HTTP request?"
+  answers:
+    - "GET"
+    - "PUT"
+    - "REMOVE"
+    - "POST"
+  day: 5
+
+- question: "What site does pip usually (not always) download third party modules from?"
+  answers:
+    - "pypi.org"
+    - "dockerhub.com"
+    - "python.org"
+  day: 5
+
+- question: "In Figure 2, what change is NOT being made to 'move'? You may use Google if you're not sure!"
+  answers:
+    - "breaking the string up into a list"
+    - "removing all whitespaces on the left and right side of the string"
+    - "forcing the string to lower case"
+    - "moving the value to a different dictionary"
+  day: 5
+
+- question: "In Figure 3, would the following line be true? --> if 'chainsaw' in rooms[currentRoom]['item']"
+  answers:
+    - "Confidently, yes!"
+    - "Not confidently... yes?"
+    - "Confidently, no!"
+    - "Not confidently... no?"
+  day: 5
+
+- question: "Write a line of code that checks if you are able to defeat the zombie."
+  day: 5
+
+- question: "If an error occurs in a block of code indented under the keyword 'try', what happens?"
+  answers:
+    - "Script errors out"
+    - "Code under 'except' executes"
+    - "Nothing happens, the error is skipped"
+  day: 6
+
+- question: "In Figure 1 on screen, name ONE attribute."
+  day: 6
+
+- question: "In Figure 1 on screen, name ONE method."
+  day: 6
+
+- question: "Imagine we made another class called 'Warrior', which would take the existing class 'Hero' and basically give it additional methods and attributes. This would be an example of..."
+  answers:
+    - "heritage"
+    - "bequest"
+    - "inheritance"
+    - "primogeniture"
+  day: 6
+
+- question: "TRUE OR FALSE: You can send any kind of request to an API as long as you are authenticated and have the correct path."
+  answers:
+    - "True"
+    - "False"
+  day: 7
+
+- question: "Which request is most commonly accepted by APIs?"
+  answers:
+    - "GET"
+    - "PUT"
+    - "POST"
+    - "DELETE"
+  day: 7
+
+- question: "Which of the following is an INCORRECT comparison between Python data and JSON?"
+  answers:
+    - "JSON ONLY uses 'double quotes,' Python can use either."
+    - "True/False = Python, true/false = JSON"
+    - "None = Python, null = JSON"
+    - "{'key':'value'} is a DICTIONARY in Python and an ARRAY in JSON"
+  day: 7
+
+- question: "'Open APIs' are called such because they don't require ________ to access:"
+  answers:
+    - "Authentication"
+    - "Authorization"
+    - "Admission"
+  day: 7
+
+- question: "In Figure 1, what is 'x'?"
+  answers:
+    - "JSON"
+    - "HTTP response"
+    - "HTTP request"
+    - "Python data"
+  day: 7
+
+- question: "If you were looking to READ data in an API, which request would you use?"
+  answers:
+    - "GET"
+    - "PUT"
+    - "POST"
+    - "DELETE"
+  day: 8
+
+- question: "If you were looking to ADD data to an API, which request would you use?"
+  answers:
+    - "GET"
+    - "PUT"
+    - "POST"
+    - "DELETE"
+  day: 8
+
+- question: "If you were looking to CHANGE data in an API, which request would you use?"
+  answers:
+    - "GET"
+    - "PUT"
+    - "POST"
+    - "DELETE"
+  day: 8
+
+- question: "Most APIs require some sort of authentication (proving who you are) before allowing full/any access. What did we need to access the NASA APIs?"
+  answers:
+    - "API key"
+    - "API username/password"
+    - "API certificate"
+  day: 8
+
+- question: "Check out this URL. What are those values following the question mark -> api.nasa.gov?api_key=DEMO_KEY&date=09-21-1984"
+  answers:
+    - "Query parameters"
+    - "URL arguments"
+    - "Scheme"
+    - "Authority"
+  day: 8
+
+- question: "In Figure 1, if a client sent a GET request to \"/one\", what response code would be returned?"
+  answers:
+    - "200 range"
+    - "300 range"
+    - "400 range"
+    - "500 range"
+  day: 9
+
+- question: "In Figure 1, if a client sent a GET request to \"/two/radical\", what text would be displayed in a browser?"
+  day: 9
+
+- question: "In Figure 1, if a client sent a POST request to \"/three\", what response code would be returned?"
+  answers:
+    - "200 range"
+    - "300 range"
+    - "400 range"
+    - "500 range"
+  day: 9
+
+- question: "In Figure 1, if a client sent a GET request to \"/four\", what response code would be returned?"
+  answers:
+    - "200 range"
+    - "300 range"
+    - "400 range"
+    - "500 range"
+  day: 9
+
+- question: "In a jinja2 template, which set of punctuation needs to surround VARIABLES?"
+  answers:
+    - "{% %}"
+    - "{ }"
+    - "{{ }}"
+    - "[[ ]]"
+  day: 10
+
+- question: "In a jinja2 template, which set of punctuation needs to surround EXPRESSIONS, like for loops or if statements?"
+  answers:
+    - "{% %}"
+    - "{ }"
+    - "{{ }}"
+    - "[[ ]]"
+  day: 10
+
+- question: "Cookies and sessions are both used for data storage, in their way. Which is stored on the CLIENT side?"
+  answers:
+    - "cookies"
+    - "sessions"
+  day: 10
+
+- question: "Are cookies a secure place to store sensitive data? Why or why not?"
+  day: 10
+
+- question: "When making changes to the content of a table in sqlite3, what MUST you do afterward?"
+  answers:
+    - ".execute()"
+    - ".close()"
+    - ".commit()"
+  day: 10
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        pre {
+            font-family: monospace;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/download">
+        <h3>Check all questions you'd like to include. Then click "Submit" to download a WebEx poll file!</h3>
+        <a href="/addnew">Click HERE to add a new question</a>
+        {% set choices = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
+
+        <ul>
+            {% for item in questions %}
+            <li>
+                <pre><label><input type="checkbox" name="selected_questions" value="{{ item.question }}"><b>(Day {{ item.day }}) {{ item.question }}</b></label></pre>
+
+                <ul>
+                    {% for answer in item.answers %}
+                    <li><pre><i>&nbsp;&nbsp;&nbsp;&nbsp;{{ choices[loop.index0] }}:</i> {{ answer }}</pre></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

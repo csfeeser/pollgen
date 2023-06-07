@@ -1,0 +1,93 @@
+- question: "Which is not a type of block we learned yesterday?"
+  answers:
+    - terraform
+    - resource
+    - variable
+    - input
+    - output
+  day: 2
+
+- question: "In Figure 1 on Chad's screen, what part of the block is 1?"
+  answers:
+    - argument
+    - label
+    - type
+    - block body
+  day: 2
+
+- question: "In Figure 1 on Chad's screen, what part of the block is 2?"
+  answers:
+    - argument
+    - label
+    - type
+    - block body
+  day: 2
+
+- question: "In Figure 1 on Chad's screen, what part of the block is 3?"
+  answers:
+    - argument
+    - label
+    - type
+    - block body
+  day: 2
+
+- question: "In Figure 1 on Chad's screen, what part of the block is 4?"
+  answers:
+    - argument
+    - label
+    - type
+    - block body
+  day: 2
+
+- question: "In Figure 2 on Chad's screen, look at line 3. We'd like to define the name of the container using the variable block below. What should replace the \"???\" on that line?"
+  type: text
+  day: 2
+
+- question: "Which type of block will result in tools being downloaded for use in the module?"
+  answers:
+    - provider
+    - output
+    - resource
+  day: 2
+
+- question: "Which type of block will print results from other blocks following \"terraform apply\" or \"terraform show\"?"
+  answers:
+    - provider
+    - output
+    - resource
+  day: 2
+
+- question: "What website should you visit when you want to read up on what resource blocks can be created by a specific provider?"
+  type: text
+  day: 2
+
+- question: "In FIGURE 1 on screen, what should replace \"???\" on line 9?"
+  answers:
+    - each.key
+    - each.value
+    - either would work
+  day: 3
+
+- question: "If during the process of creating a resource you needed to execute a command on your local machine (like writing output to a file), what block will let that happen?"
+  answers:
+    - resource
+    - data
+    - provisioner
+    - provider
+  day: 3
+
+- question: "If you needed to send an HTTP GET to an API and store that information you get back, what block would you use?"
+  answers:
+    - resource
+    - data
+    - provisioner
+    - provider
+  day: 3
+
+- question: "If one of your resources is in bad shape and it (and only it) needs replaced, what command is the best course of action?"
+  answers:
+    - terraform taint
+    - terraform apply -auto-approve
+    - terraform apply -replace
+  day: 3
+

@@ -1,0 +1,251 @@
+---
+- question: Which key fact is WRONG?
+  answers:
+    - A SIP response is a numeric value ranging 100 to 699
+    - The three components of a SIP REQUEST are REQUEST LINE, HEADERS, and SDP.
+    - TO and FROM are SIP headers
+    - The REQ-URI is always in the first line of a SIP request
+  day: 2
+- question: Which key fact is wrong?
+  answers:
+    - Using a patch cord to interconnect two terminations is called a 'context'.
+    - The operator represents a 'softswitch'
+    - The protocol used for an operator to speak to another operator would be
+      SS7 or now, SIP.
+    - The patch panel directly compares with a VoIP media gateway.
+  day: 2
+- question: Which key fact is WRONG?
+  answers:
+    - Legacy service requires signaling and media to follow parallel path.
+    - SS7 is to SIP as bearer channels are to RTP.
+    - A Circuit switch must process both signaling and media.
+    - A SIP B2BUA must process both SIP and the media.
+  day: 2
+- question: The SIP INVITE and the ACK both travel in the same direction (Alice to Bob).
+  answers:
+    - "TRUE"
+    - "FALSE"
+  day: 2
+- question: In an all IMS design, you are potentially one 'dynamic hop' from the
+    called party.
+  answers:
+    - "TRUE"
+    - "FALSE"
+  day: 2
+- question: Which facts are true regarding a SIP UA?
+  answers:
+    - Software typically optimized for SIP routing.
+    - Software which acts like a UAC when sending requests.
+    - Software which acts like a UAC when receiving responses.
+    - Software meant to originate or terminate a SIP dialog.
+  day: 2
+- question: Which URI identifies the current location of the UA?
+  answers:
+    - REQ-URI
+    - Contact-URI
+    - The SIP Domain
+    - AOR (address of record)
+  day: 2
+- question: Which part of the URI identifies the proxy?
+  answers:
+    - REQ-URI
+    - Contact-URI
+    - The SIP domain
+    - AOR (address of record)
+  day: 2
+- question: In the home network, the routing proxy will map an AOR to...
+  answers:
+    - the REQ-URI
+    - the Contact-URI
+    - the SIP domain
+    - the homeAOR (address of record)
+  day: 2
+- question: Which REGEX matches this number --> 17175664428
+  answers:
+    - .*
+    - ^.+
+    - "1717566442.0"
+    - All the above!
+  day: 3
+- question: Why aren't VIA and RECORD-ROUTE function combined in a single header?
+  day: 3
+- question: Which party learns the trust chain first?
+  day: 3
+- question: Which identifier can be used to distinguish one dialog from another?
+  answers:
+    - From
+    - To
+    - Call-ID
+    - Record-route
+  day: 3
+- question: A reINVITE may be instantly recognized because...
+  answers:
+    - The existence of a 'From tag'
+    - The existence of a 'To tag'
+    - The Call-ID is already established
+    - The reINVITE method will look like this --> VTREINVITE
+      sip:2001@192.168.200.81:5060 SIP/2.0
+  day: 3
+- question: A softswitch is generally located behind an SBC.
+  answers:
+    - "True"
+    - "False"
+  day: 3
+- question: What is true regarding a SBC?
+  answers:
+    - Another name for a UAS.
+    - B2BUA providing security, and a method to traverse NATs.
+    - Required for any SIP system to function.
+    - Always hardware-based.
+  day: 3
+- question: What is the purpose of an Outbound proxy?
+  answers:
+    - To provide SBC-like features.
+    - Route SIP messages to the called UA.
+    - A proxy that provides outbound-only services.
+    - A proxy which by configuration is guaranteed to be the first outbound hop,
+      which is often used to perform RFC 3263 (Locating SIP servers) function,
+      security or charging.
+  day: 3
+- question: RFC 3261, Session Initiation Protocol is so complete, that no
+    additional RFCs are really required to create a working system.
+  answers:
+    - "True"
+    - "False"
+  day: 4
+- question: How many round trips are required to REGISTER a SIP UA with HMAC
+    authentication?
+  answers:
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+  day: 4
+- question: What is true of a 'reINVITE'?
+  answers:
+    - Identified by a packet containing the word 'reINVITE'
+    - A SIP 'INVITE' that occurs within an established dialog
+    - Usually contained within the RTP stream
+    - Often used to modify the media
+  day: 4
+- question: What is true of a 'PRACK'?
+  answers:
+    - Used to add reliability to provisional responses
+    - If a PRACK is used with a 180, then the dialog begins with the 180.
+    - Stands for 'Partial Acknowledgment'
+    - Can cause more problems than it solves!
+  day: 4
+- question: What is true regarding early dialog?
+  answers:
+    - A UA enters early dialog based on information in a provisional response.
+    - There can be many early dialogs prior to the final dialog.
+    - An early dialog ends with a 199.
+    - Often a result of SIP forking.
+  day: 4
+- question: What is true regarding looping and spiraling? (select all that apply)
+  answers:
+    - Looping NEVER gets closer and closer to the destination.
+    - Spiraling continues to get closer until it arrives at the destination.
+    - Looping will be halted by the Max-forwards decrementing to zero.
+    - Spiraling may be halted by the Max-forwards decrementing to zero.
+  day: 4
+- question: Which is like an ISBN number, tells you what it is, but NOT where it is?
+  answers:
+    - URI
+    - URL
+    - URN
+    - AOR
+  day: 4
+- question: Which symbol delimits a SIP URI?
+  answers:
+    - ;
+    - <>
+    - "@"
+    - "?"
+  day: 4
+- question: What is true of SIPp?
+  answers:
+    - Easy to install SIP testing tool.
+    - Use it to experiment with SIP headers.
+    - It processes calls with great intelligence.
+    - It can be used to replay SIP protocol problems when diagnosing a problem.
+  day: 4
+- question: You want to use SIPp to test a very specific SIP message's effect on
+    your proxy, so how will you proceed?
+  answers:
+    - Use the built-in UAS scenario
+    - Use the built-in UAC scenario.
+    - Dump the UAC scenario XML and edit the XML directly, allowing you total
+      control over the message.
+    - Run the 3PCC built-in scenario.
+  day: 4
+- question: RFC 3261, Session Initiation Protocol is so complete, that no
+    additional RFCs are really required to create a working system.
+  answers:
+    - "True"
+    - "False"
+  day: 5
+- question: Which is true regarding SIP headers?
+  answers:
+    - Each header only occupies one line.
+    - The end of a header is marked with CR LF (\r\n).
+    - No given header is mandatory.
+    - The first line in a SIP message is NOT a header.
+  day: 5
+- question: The SIP header that would best indicate the presence of SDP is...
+  answers:
+    - Content-Type
+    - Length
+    - Via
+    - Route
+  day: 5
+- question: Which SIP Request may change the nature of SDP but have no effect on
+    SIP dialog state?
+  answers:
+    - ACK
+    - INVITE
+    - UPDATE
+    - REFER
+  day: 5
+- question: When you buy a domain, you just bought a pointer to a zone file that
+    you must populate.
+  answers:
+    - "True"
+    - "False"
+  day: 5
+- question: What DNS resource records are used to support RFC 3263, Locating SIP servers?
+  answers:
+    - A-Record, SRV, NAPTR, SOA
+    - SOA, SRV, NAPTR
+    - NAPTR, SRV, A-Record
+    - NS, SOA, INVITE, BYE
+  day: 5
+- question: ENUM Regular Expression is…
+  answers:
+    - Sent to the proxy for processing.
+    - Processed in the DNS, and the results returned to the proxy.
+    - Added to the SIP INVITE.
+    - None of these.
+  day: 5
+- question: Following ENUM processing…
+  answers:
+    - Call processing continues according to the locating SIP servers (RFC 3263).
+    - The call is routed to the DNS.
+    - The SIP INVITE is sent back to the caller.
+    - A BYE is sent to the caller.
+  day: 5
+- question: A reason for early media is…
+  answers:
+    - To allow the parties to speak as soon as the call is answered.
+    - Allow the proxies to modify SDP.
+    - To open the media path to carry call progress tones prior to the call
+      being answered.
+    - To allow the calling party to dial digits in two-stage dialing.
+  day: 5
+- question: Which DTMF transfer method reproduces the duration of a DTMF event?
+  answers:
+    - SIP INFO
+    - RFC-2833
+    - H.248
+    - SRTP
+  day: 5

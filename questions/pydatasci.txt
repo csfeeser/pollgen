@@ -1,3 +1,4 @@
+---
 - question: Which of the following is NOT a difference between JSON and Python?
   answers:
     - true/false vs. True/False
@@ -93,37 +94,34 @@
     - 3 📈 📊 📉
     - 4 📈 📊 📉 💹
   day: 4
-
 - question: Which of the following is NOT a difference between JSON and Python?
   answers:
-  - true/false vs. True/False
-  - null vs. None
-  - JSON is "double quotes" ONLY, while Python can use 'single' or "double" quotes
-  - all the above are correct
+    - true/false vs. True/False
+    - null vs. None
+    - JSON is "double quotes" ONLY, while Python can use 'single' or "double"
+      quotes
+    - all the above are correct
   day: 5
-
 - question: What matplotlib ax method will add text and/or an arrow on your graph?
   answers:
-  - .annotate()
-  - .label()
-  - .scribble()
+    - .annotate()
+    - .label()
+    - .scribble()
   day: 5
-
-- question: In Figure 2 on Chad's screen, what would be returned from heroes[1]["power"][1]?
+- question: In Figure 2 on Chad's screen, what would be returned from
+    heroes[1]["power"][1]?
   answers:
-  - regeneration
-  - sass
-  - super strength
-  - invulnerability
-  - magic
-  - mind control
+    - regeneration
+    - sass
+    - super strength
+    - invulnerability
+    - magic
+    - mind control
   day: 5
-
-- question: I want 25 equally-spaced numbers between 1 and 100.
-  Which would do that?
+- question: I want 25 equally-spaced numbers between 1 and 100. Which would do that?
   answers:
-  - np.linspace(1, 100, 25) 
-  - np.linspace(1, 100) 
-  - np.arange(1, 100, 25) 
-  - np.arange(1, 100) 
+    - np.linspace(1, 100, 25)
+    - np.linspace(1, 100)
+    - np.arange(1, 100, 25)
+    - np.arange(1, 100)
   day: 5

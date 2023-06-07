@@ -1,9 +1,6 @@
 from flask import Flask, jsonify, send_file, render_template, request, redirect, url_for, session, make_response
-from flask_session import Session
-from jinja2 import Template
 import yaml
 import requests
-from pprint import pprint
 import io
 import html
 from datetime import datetime
@@ -11,9 +8,34 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = "any random string"
 
+REPO_OWNER = 'csfeeser'
+REPO_NAME = 'pollgen'
+DIRECTORY_PATH = 'questions'
+
+def list_files_in_github_directory():
+
+
+    # API endpoint for listing directory contents
+    api_url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{DIRECTORY_PATH}"
+
+    # Make GET request to the GitHub API
+    response = requests.get(api_url)
+
+    files = []
+    data = response.json()
+
+    for item in data:
+        if 'type' in item and item['type'] == 'file':
+            file_name = item['name']
+            if file_name.endswith('.txt'):
+                file_name = file_name[:-4]  # Remove the ".txt" extension
+            files.append(file_name)
+
+    return files
+
 @app.route('/')
 def index():
-    return render_template('form.html')
+    return render_template('form.html', course_list=list_files_in_github_directory())
 
 @app.route('/process_form', methods=['POST'])
 def process_form():
@@ -42,7 +64,9 @@ def result(course):
         new_question = {"question": question, "answers": answers, "day": "CUSTOM"}
 
         if session.get("add"):
-            session["add"].append(new_question)
+            updated= list(session.get("add"))
+            updated.append(new_question)
+            session["add"]= updated
         else:
             session["add"]= [new_question]
 
@@ -50,7 +74,8 @@ def result(course):
 
     else:
         # Construct the raw file URL of the YAML file in the GitHub repository
-        github_repo = 'https://raw.githubusercontent.com/csfeeser/Python/master/demos/'
+        github_repo = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/main/{DIRECTORY_PATH}/"
+        
         yaml_url = github_repo + course + '.txt'
         
         # Make an HTTP GET request to retrieve the YAML file
@@ -59,13 +84,13 @@ def result(course):
         if response.status_code == 200:
             # Parse the YAML data into Python data
             yaml_data = yaml.safe_load(response.text)
-                
-            if session.get("add"):
-                yaml_data.extend(session["add"])
 
+            if session.get("add") and isinstance(session["add"], list):
+                yaml_data.extend(session["add"])
+            
             session['yaml_data'] = yaml_data
             session['course name']= course
-
+             
             return render_template('choices.html', questions=yaml_data)
 
         else:
@@ -77,10 +102,6 @@ def download():
         # Retrieve the selected questions from the form
         questions = request.form.getlist('selected_questions')
         yaml_data = session.get('yaml_data')
-        
-        print(type(yaml_data))
-        print(type(questions))
-        pprint(questions)
 
         # Render the poll template with the selected questions and YAML data
         rendered_template = render_template('poll_template.j2', questions=questions, yaml_data=yaml_data)

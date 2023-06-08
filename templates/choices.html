@@ -65,6 +65,10 @@
             {% endfor %}
         </ul>
 
+        {% if figures_present %}
+        <a href="{{ figures_path }}" target="_blank">Click here to view the figures referenced by above questions.</a>
+        {% endif %}
+        
         <input type="submit" value="Submit">
     </form>
 </body>

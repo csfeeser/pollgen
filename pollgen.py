@@ -13,8 +13,6 @@ REPO_NAME = 'pollgen'
 DIRECTORY_PATH = 'questions'
 
 def list_files_in_github_directory():
-
-
     # API endpoint for listing directory contents
     api_url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{DIRECTORY_PATH}"
 
@@ -90,8 +88,16 @@ def result(course):
             
             session['yaml_data'] = yaml_data
             session['course name']= course
-             
-            return render_template('choices.html', questions=yaml_data)
+            
+            figures_repo = f"https://github.com/{REPO_OWNER}/{REPO_NAME}/tree/main/questions/figures/{course}"
+            response = requests.get(figures_repo)
+
+            if response.status_code == 200:
+                figures_present= True
+            else:
+                figures_present= False
+
+            return render_template('choices.html', questions=yaml_data, figures_present= figures_present, figures_path= figures_repo)
 
         else:
             return f'Failed to retrieve the YAML data for {course}.'
@@ -129,7 +135,7 @@ def download():
 
 @app.route('/addnew')
 def add_new():
-    if session['course name']:
+    if session.get('course name'):
         return render_template('addnew.j2', course_name=session['course name'])
     else:
         return '<a href="/" class="back-link">You have not selected a course. Return to the main page.</a>'

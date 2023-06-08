@@ -1,5 +1,5 @@
 - question: "When running an Ad-Hoc Ansible command, you are running Ansible without a _______ :"
-  options:
+  answers:
     - "ansible.cfg"
     - "inventory file"
     - "playbook"
@@ -8,7 +8,7 @@
   day: 2
 
 - question: "What file lists connection info (IP address, user name) for hosts and groups of hosts?"
-  options:
+  answers:
     - "playbook"
     - "module"
     - "inventory"
@@ -17,7 +17,7 @@
   day: 2
 
 - question: "If you wanted to set a default location for where Ansible looks for your inventory file, where would you add that rule?"
-  options:
+  answers:
     - "playbook"
     - "module"
     - "inventory"
@@ -26,7 +26,7 @@
   day: 2
 
 - question: "List the following from LARGEST to SMALLEST:"
-  options:
+  answers:
     - "Plays, Playbooks, Tasks"
     - "Tasks, Playbooks, Plays"
     - "Playbooks, Plays, Tasks"
@@ -34,7 +34,7 @@
   day: 2
 
 - question: "In Ansible, what is idempotence?"
-  options:
+  answers:
     - "Makes a change the first time ONLY"
     - "Makes a change every time."
     - "Throws an error if a change must be made more than once."
@@ -42,7 +42,7 @@
   day: 3
 
 - question: "Uh oh! Your host doesn't have Python installed! What module will you likely use to automate installing Python on hosts?"
-  options:
+  answers:
     - "apt"
     - "yum"
     - "raw"
@@ -51,7 +51,7 @@
   day: 3
 
 - question: "When you use a LOOP, what is the variable that represents each item being returned from the loop?"
-  options:
+  answers:
     - "x"
     - "item"
     - "element"
@@ -60,7 +60,7 @@
   day: 3
 
 - question: "What keyword allows us to set a condition that must be met before a task runs?"
-  options:
+  answers:
     - "if"
     - "try"
     - "when"
@@ -69,7 +69,7 @@
   day: 3
 
 - question: "Which of the modules that we learned about yesterday seems like it'd be most useful to you? Can you provide a use case of where you think you could use it?"
-  options:
+  answers:
     - "debug"
     - "copy"
     - "template"
@@ -78,7 +78,7 @@
   day: 3
 
 - question: "With those four variables defined at the top, which of the four lines in the Jinja2 template WILL NOT be printed in the final document?"
-  options:
+  answers:
     - "Line 1"
     - "Line 2"
     - "Line 3"
@@ -87,7 +87,7 @@
   day: 4
 
 - question: "What’s the primary purpose of putting tags on tasks?"
-  options:
+  answers:
     - "Adding metadata identifying what that task does"
     - "Allows selection of what tasks do and do not run"
     - "Gives the task a name to differentiate between other tasks"
@@ -95,7 +95,7 @@
   day: 4
 
 - question: "When does a handler task run?"
-  options:
+  answers:
     - "Every time the 'tasks' section finishes."
     - "Only when notified by a task."
     - "Only when notified by a task AND that task created a change/turned yellow."
@@ -104,7 +104,7 @@
   day: 4
 
 - question: "When you’re looking to download a new “toolkit” full of additional modules, you will likely download a _____:"
-  options:
+  answers:
     - "Role"
     - "Collection"
     - "Ansible Galaxy"
@@ -112,7 +112,7 @@
   day: 4
 
 - question: "One of the most secure methods of entering something sensitive like a password that we've learned SO FAR would be:"
-  options:
+  answers:
     - "using vars_prompt"
     - "putting the password in the inventory file, unencrypted"
     - "putting the password in the playbook vars, unencrypted"
@@ -120,7 +120,7 @@
   day: 4
 
 - question: "The Ansible controller that runs against a Dell EMC PowerEdge server would need the OMSDK installed via pip and the 'dellemc.openmanage' collection installed. What would the hosts/connection be in that playbook?"
-  options:
+  answers:
     - "dellemc, http"
     - "localhost, local"
     - "openmanage, ssh"
@@ -129,7 +129,7 @@
   day: 5
 
 - question: "Why must we use a network_cli connection when using Ansible to configure most network devices?"
-  options:
+  answers:
     - "network devices can't receive SSH commands"
     - "expect scripting is inefficient, so we don't use it"
     - "network devices' OS doesn't permit Python to be installed"
@@ -138,7 +138,7 @@
   day: 5
 
 - question: "What is a ROLE in Ansible?"
-  options:
+  answers:
     - "A highly organized playbook that can be imported into other playbooks."
     - "A group of modules grouped together in a single collection for easy download/installation."
     - "The plugin that allows for the Ansible Controller to talk to all kinds of hosts (Linux, network devices, cloud, etc.)"
@@ -146,7 +146,7 @@
   day: 5
 
 - question: "What is ansible-vault?"
-  options:
+  answers:
     - "An encryption tool for files or strings that teams use for their playbooks."
     - "A storage tool that makes playbooks reusable by teams"
     - "A security tool that hides files so they are only detectable by the playbook."

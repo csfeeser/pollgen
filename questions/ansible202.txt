@@ -1,5 +1,5 @@
 - question: "What are the two basic sections of an Ansible playbook?"
-  options:
+  answers:
     - "play and tasks"
     - "play and roles"
     - "roles and collections"
@@ -8,7 +8,7 @@
   day: 2
 
 - question: "What do you find to the left of a colon in YAML?"
-  options:
+  answers:
     - "Key"
     - "Value"
     - "Array"
@@ -17,7 +17,7 @@
   day: 2
 
 - question: "What Ansible module would you use to check the value of a variable?"
-  options:
+  answers:
     - "var"
     - "loop"
     - "debug"
@@ -26,7 +26,7 @@
   day: 2
 
 - question: "What data serialization technique is a subset of YAML?"
-  options:
+  answers:
     - "Toml"
     - "JSON"
     - "Lists"
@@ -35,7 +35,7 @@
   day: 2
 
 - question: "What Ansible playbook section actually does the work?"
-  options:
+  answers:
     - "name"
     - "tasks"
     - "vars"
@@ -44,7 +44,7 @@
   day: 2
 
 - question: "What is the variable used to make a loop in Ansible?"
-  options:
+  answers:
     - "vars"
     - "gather_facts"
     - "item"
@@ -53,7 +53,7 @@
   day: 3
 
 - question: "What characters are used to represent a Python list?"
-  options:
+  answers:
     - "{}"
     - "()"
     - "[]"
@@ -62,7 +62,7 @@
   day: 3
 
 - question: "What characters are used to represent a Python dictionary?"
-  options:
+  answers:
     - "[]"
     - "\"\""
     - "()"
@@ -71,7 +71,7 @@
   day: 3
 
 - question: "What is the first thing you should do when attempting to access an API?"
-  options:
+  answers:
     - "Read the API documentation."
     - "Read the docs about the API."
     - "Search for documentation about the API."
@@ -80,7 +80,7 @@
   day: 3
 
 - question: "What does the Assert module help create in a playbook?"
-  options:
+  answers:
     - "tasks"
     - "prechecks"
     - "play"
@@ -89,7 +89,7 @@
   day: 3
 
 - question: "What can installing an Ansible collection give you?"
-  options:
+  answers:
     - "A series of roles and tasks."
     - "A group of playbooks."
     - "Access to multiple customized modules."
@@ -98,7 +98,7 @@
   day: 4
 
 - question: "What does the redfish_info module do?"
-  options:
+  answers:
     - "Allow you to make changes to the config file."
     - "Gather facts about redfish hosts."
     - "Issue commands to remote hosts."
@@ -107,7 +107,7 @@
   day: 4
 
 - question: "If you wanted to create a new group of hosts what file would you configure?"
-  options:
+  answers:
     - "Ansible config file."
     - "Python config file."
     - "Inventory file."
@@ -116,21 +116,21 @@
   day: 4
 
 - question: "Is it possible to have more than one inventory file?"
-  options:
+  answers:
     - "Yes"
     - "No"
   correct: "Yes"
   day: 4
 
 - question: "There will always be a module that allows Ansible to gather facts about a remote target."
-  options:
+  answers:
     - "True"
     - "False"
   correct: "True"
   day: 5
 
 - question: "Writing Pre-Checks are part of following best practices."
-  options:
+  answers:
     - "True"
     - "False"
     - "Maybe?"
@@ -139,7 +139,7 @@
   day: 5
 
 - question: "What Ansible command is used to create a Role?"
-  options:
+  answers:
     - "ansible-playbook"
     - "ansible-galaxy role install"
     - "ansible-galaxy role init"
@@ -148,7 +148,7 @@
   day: 5
 
 - question: "What do the Block and Rescue keywords provide?"
-  options:
+  answers:
     - "A way to group tasks together."
     - "Allows for a method to import tasks from a different file."
     - "Allows you to copy roles from other files."

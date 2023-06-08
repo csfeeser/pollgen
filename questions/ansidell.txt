@@ -1,5 +1,3 @@
-Here are the modified questions with the "correct" key added to each question indicating the correct answer:
-
 - question: "When running an Ad-Hoc Ansible command, you are running Ansible without a _______ :"
   answers:
   - "ansible.cfg"

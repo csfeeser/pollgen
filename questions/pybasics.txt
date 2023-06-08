@@ -1,4 +1,3 @@
----
 - question: Which of the following is a STRING?
   answers:
     - 3.14
@@ -18,13 +17,13 @@
     - heroes[2]
     - heroes[3]
   day: 2
-- question: Check out Figure 1 on Chad's screen! What would be the output of this code?
+- question: Check out Figure 1 on the instructor's screen! What would be the output of this code?
   answers:
     - Batman is awesome
     - awesome is Batman
     - Batman is Batman
   day: 2
-- question: Check out Figure 2 on Chad's screen! What would be the output of this code?
+- question: Check out Figure 2 on the instructor's screen! What would be the output of this code?
   answers:
     - Wonder Woman
     - Flash
@@ -70,7 +69,7 @@
     - elif
     - else
   day: 3
-- question: Look at Figure 1 on Chad's screen. What would be the CLASS/TYPE of 'x'?
+- question: Look at Figure 1 on the instructor's screen. What would be the CLASS/TYPE of 'x'?
   answers:
     - List
     - Dictionary

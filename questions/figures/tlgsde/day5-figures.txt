@@ -1,0 +1,46 @@
+FIGURE 1.
+
+import requests
+
+resp = requests.get("api.example.com")
+x = resp.json()     # What is "x"?
+
+
+resp = requests.get("api2.example.com")
+data = resp."Y"()   # What should the "Y" method be for this to make the most sense?
+
+
+=====================================
+FIGURE 2.
+
+move= input("What do you do next?")
+
+# example answer might be GO EAST
+
+move= move.lower().strip().split()
+
+=====================================
+FIGURE 3.
+
+currentRoom= "Bathroom"
+
+inventory = ["Stihl User Manual", "Hat", "Daisy", "Shark Repellent (Spray)"]
+
+stats = {"str": 10, "dex": 5, "wis": 7, "hit points": 20}
+
+rooms= {
+       "Kitchen": {
+         "west": "Garage",
+         "item": "cookie"
+       },
+       "Garage": {
+         "east": "Kitchen",
+         "item": "chainsaw",
+         "monster": "zombie"
+       }}
+
+if "chainsaw" in rooms[currentRoom]["item"]:
+    print("Found the chainsaw! VROOOM")
+
+
+

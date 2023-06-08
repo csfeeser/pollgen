@@ -1,96 +1,112 @@
 - question: "What command would you use to recall your previous commands?"
   answers:
-  - "recall"
-  - "history"
-  - "ls"
-  - "double tab"
+    - "recall"
+    - "history"
+    - "ls"
+    - "double tab"
+  correct: "history"
   day: 2
 
 - question: "What command would you use to list the contents of a directory?"
   answers:
-  - "tab"
-  - "cd"
-  - "ls"
-  - "touch"
+    - "tab"
+    - "cd"
+    - "ls"
+    - "touch"
+  correct: "ls"
   day: 2
 
 - question: "What command would you use to delete a file?"
   answers:
-  - "delete"
-  - "remove"
-  - "rm"
-  - "right-click then delete <-- (hint THIS IS LINUX, we do NOT click here! :)"
+    - "delete"
+    - "remove"
+    - "rm"
+    - "right-click then delete <-- (hint THIS IS LINUX, we do NOT click here! :)"
+  correct: "rm"
   day: 2
 
 - question: "You are working on a problem and realize that you need to watch the logs in real time, what command will you use?"
   answers:
-  - "watch"
-  - "say linux-wan-kenobi, you are my only hope"
-  - "tail -f"
-  - "vim   /var/log/syslog"
+    - "watch"
+    - "say linux-wan-kenobi, you are my only hope"
+    - "tail -f"
+    - "vim   /var/log/syslog"
+  correct: "tail -f"
   day: 2
 
 - question: "You need to connect to a remote host, so you decide to use SSH and there is no .ssh/config file. Which command is the correct format?"
   answers:
-  - "ssh bender@10.10.2.3 -i ~/.ssh/id_rsa"
-  - "ssh bender@10.10.2.3 "
-  - "ssh bender"
-  - "ssh 10.10.2.3"
+    - "ssh bender@10.10.2.3 -i ~/.ssh/id_rsa"
+    - "ssh bender@10.10.2.3 "
+    - "ssh bender"
+    - "ssh 10.10.2.3"
+  correct: "ssh bender@10.10.2.3 -i ~/.ssh/id_rsa"
   day: 2
 
 - question: "You need to move an entire directory of content to a remote host, which utility is best suited for this?"
   answers:
-  - "ssh"
-  - "scp"
-  - "rsync"
-  - "megasync"
-  - "click and drag (hint- In Linux, we do NOT click and drag :)"
+    - "ssh"
+    - "scp"
+    - "rsync"
+    - "megasync"
+    - "click and drag (hint- In Linux, we do NOT click and drag :)"
+  correct: "rsync"
   day: 2
 
 - question: "You need to have multiple bash sessions open, what tool will you use?"
   answers:
-  - "many putty windows (ahhh please do NOT go for this one)"
-  - "tmux"
-  - "bash"
-  - "vim"
+    - "many putty windows (ahhh please do NOT go for this one)"
+    - "tmux"
+    - "bash"
+    - "vim"
+  correct: "tmux"
   day: 2
 
 - question: "What is this character called and what does it do? \"|\""
   answers:
-  - "bar, and is used for comparisons"
-  - "pipe, and used for directing outputs from one program to the input of another"
-  - "redirect, and used to redirect I/O"
-  - "This character is never used in Linux."
+    - "bar, and is used for comparisons"
+    - "pipe, and used for directing outputs from one program to the input of another"
+    - "redirect, and used to redirect I/O"
+    - "This character is never used in Linux."
+  correct: "pipe, and used for directing outputs from one program to the input of another"
   day: 3
 
 - question: "What command is used to change the owner of a file?"
   answers:
-  - "owner"
-  - "chown"
-  - "chmod"
-  - "touch"
+    - "owner"
+    - "chown"
+    - "chmod"
+    - "touch"
+  correct: "chown"
   day: 3
 
 - question: "What is a dependency in Linux?"
   answers:
-  - "Software necessary to support the software you want to run"
-  - "A permissions error"
-  - "Not handled with apt, dnf, or yum installations"
-  - "The Linux kernel"
+    - "Software necessary to support the software you want to run"
+    - "A permissions error"
+    - "Not handled with apt, dnf, or yum installations"
+    - "The Linux kernel"
+  correct: "Software necessary to support the software you want to run"
   day: 3
 
-- question: "What is UGO in Linux? (choose two)"
+- question: "What
+
+ is UGO in Linux? (choose two)"
   answers:
-  - "Permission categories"
-  - "user, group, and ... owner?"
-  - "broken down further into read, write, and execute"
-  - "Describe the owner of the file"
+    - "Permission categories"
+    - "user, group, and ... owner?"
+    - "broken down further into read, write, and execute"
+    - "Describe the owner of the file"
+  correct:
+    - "Permission categories"
+    - "broken down further into read, write, and execute"
   day: 3
 
 - question: "What command would you use to find all files the begin with \"host\", starting from the root directory?"
   answers:
-  - "find / -name hosts"
-  - "find / -name hosts*"
-  - "tree -f hosts*"
-  - "ls hosts*"
+    - "find / -name hosts"
+    - "find / -name hosts*"
+    - "tree -f hosts*"
+    - "ls hosts*"
+  correct: "find / -name hosts*"
   day: 3

@@ -1,8 +1,9 @@
 - question: "Which of these is correctly listed from SMALLEST to LARGEST?"
   answers:
-  - "Container &lt; Pod &lt; Node &lt; Cluster"
-  - "Cluster &lt; Node &lt; Pod &lt; Container"
-  - "Node &lt; Cluster &lt; Container &lt; Pod"
+  - "Container < Pod < Node < Cluster"
+  - "Cluster < Node < Pod < Container"
+  - "Node < Cluster < Container < Pod"
+  correct: "Container < Pod < Node < Cluster"
   day: 2
 
 - question: "Which of these Controller Node components determines what node a Pod is assigned to?"
@@ -10,6 +11,7 @@
   - "scheduler"
   - "etcd"
   - "controller manager"
+  correct: "scheduler"
   day: 2
 
 - question: "Which of these Controller Node components keeps track of the state of the cluster (names/status of pods, namespaces, etc.)"
@@ -17,6 +19,7 @@
   - "scheduler"
   - "etcd"
   - "controller manager"
+  correct: "etcd"
   day: 2
 
 - question: "Which of these is NOT a reason to use namespaces?"
@@ -25,6 +28,7 @@
   - "You can put a quota on top of them to prevent overuse of resources"
   - "Able to reuse names of Pods"
   - "Namespaces keep a running log of who has been making changes"
+  correct: "Namespaces keep a running log of who has been making changes"
   day: 2
 
 - question: "What do we call the blueprint that is used to create Kubernetes objects (like Pods)?"
@@ -32,6 +36,7 @@
   - "Manifest"
   - "Image"
   - "Blueprint"
+  correct: "Manifest"
   day: 2
 
 - question: "What is port-forwarding used for?"
@@ -39,6 +44,7 @@
   - "To put permanently containers into production, exposing them outside the cluster for clients to access."
   - "To change the port of a container by rebuilding the image (ex. changing webby's port 8888 to something else)"
   - "Debugging, as it allows a kubectl user to see how a container app is running without exposing it to clients."
+  correct: "Debugging, as it allows a kubectl user to see how a container app is running without exposing it to clients."
   day: 3
 
 - question: "Which of the following is NOT set by a context?"
@@ -47,6 +53,7 @@
   - "namespace"
   - "node"
   - "user name"
+  correct: "node"
   day: 3
 
 - question: "What container parameter is used to guarantee that a container has a certain amount of resources reserved/guaranteed for its use?"
@@ -54,6 +61,7 @@
   - "requests"
   - "resourcequota"
   - "limits"
+  correct: "requests"
   day: 3
 
 - question: "What command will show you the resource consumption of Kubernetes objects?"
@@ -61,6 +69,7 @@
   - "kubectl top"
   - "kubectl resource"
   - "kubectl describe"
+  correct: "kubectl top"
   day: 3
 
 - question: "You want to set up your namespace so that all created pods automatically have a default requests/limits parameter. Which tool would you use?"
@@ -69,6 +78,7 @@
   - "Not super confident, but... RESOURCE QUOTA?"
   - "I am confident the answer is LIMIT RANGE."
   - "Not super confident, but... LIMIT RANGE?"
+  correct: "LIMIT RANGE"
   day: 3
 
 - question: "How can files be added to containers in a way that is EASY/FAST to update/replace them AND persist across container reboot?"
@@ -76,6 +86,7 @@
   - "kubectl cp"
   - "configmap"
   - "rebuild the image"
+  correct: "configmap"
   day: 4
 
 - question: "The \"rules\" of what a user might do (\"get\",\"create\",\"delete\") against what (\"pods\",\"configmaps\") in a SPECIFIC NAMESPACE are contained in what object?"
@@ -84,6 +95,7 @@
   - "clusterrole"
   - "rolebinding"
   - "clusterrolebinding"
+  correct: "role"
   day: 4
 
 - question: "Which is NOT an object that is part of storage in a cluster?"
@@ -92,6 +104,7 @@
   - "persistent volume claim"
   - "storage class"
   - "persistent storage volume claim class"
+  correct: "persistent storage volume claim class"
   day: 4
 
 - question: "How can sensitive data (tokens, keys, passwords) be made secure but also accessible to containers AND persist across reboot?"
@@ -99,6 +112,7 @@
   - "configmaps"
   - "persistent volumes"
   - "secrets"
+  correct: "secrets"
   day: 4
 
 - question: "Where are container logs stored?"
@@ -107,6 +121,7 @@
   - "In the Pod."
   - "etcd"
   - "On the node."
+  correct: "On the node."
   day: 4
 
 - question: "Kubernetes is storage agnostic; meaning it will support any storage vendor as long as the drivers are provided. What object \"teaches\" your cluster how to use a type of storage (AWS, Azure, NFS, VSphere, etc.)?"
@@ -114,12 +129,14 @@
   - "persistent volume"
   - "storage class"
   - "persistent volume claim"
+  correct: "storage class"
   day: 4
 
 - question: "Please check your email (the one you use to log in to Alta3 Live) for two emails. The first will be titled \"Alta3 Course PDF\" which contains a link to your own personal PDF copy of the course. Did you receive your email? You may need to check your spam folder."
   answers:
   - "Yes :)"
   - "No :("
+  correct: "Yes :)"
   day: 5
 
 - question: "In that same inbox, you should have received an email from Alta3 Live asking you to authenticate your email address. Doing so will make your account permanent so you can continue having online access to our content. Please click the link inside the email to do so. Check your spam folder!"
@@ -127,6 +144,7 @@
   - "I received it and clicked the link!"
   - "I received it, clicked the link, but it said something like \"the message is old.\""
   - "I didn't receive this email."
+  correct: "I received it and clicked the link!"
   day: 5
 
 - question: "Which of the following statements about deployments is FALSE:"
@@ -135,6 +153,7 @@
   - "deployments are able to change out pods with no downtime"
   - "deployments are able to roll back to previous versions"
   - "deployments don't replace their pods if they happen to be deleted"
+  correct: "deployments don't replace their pods if they happen to be deleted"
   day: 5
 
 - question: "Objects like deployments and services rely on ______ to identify Pods that belong to them."
@@ -143,12 +162,14 @@
   - "Annotations"
   - "Revisions"
   - "Replicas"
+  correct: "Labels"
   day: 5
 
 - question: "Using \"kubectl scale deploy nginx --replicas=3\" will not only scale that deployment's replica count to three, it will edit the manifest (nginxdeploy.yml, for example) on your computer."
   answers:
   - "TRUE"
   - "FALSE"
+  correct: "FALSE"
   day: 5
 
 - question: "In order for Pods to receive traffic from other Pods, they must be exposed with a:"
@@ -157,4 +178,5 @@
   - "ReplicaSet"
   - "Service"
   - "Job"
+  correct: "Service"
   day: 5

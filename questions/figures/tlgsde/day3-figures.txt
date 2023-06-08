@@ -1,0 +1,27 @@
+Figure 1.
+
+useradd -p levioSA -e 1998-06-25 hermione
+
+=============================================
+Figure 2.
+
+  1     swift= "coursing river"
+  2     force= "great typhoon"
+  3     strength= "raging fire"
+  4     mysterious= "dark side of the moon"
+  5 
+  6     manliness= False
+  7 
+  8     print("You are ",end="")
+  9 
+ 10     if swift:
+ 11        if force:
+ 12            if strength:
+ 13                if mysterious:
+ 14                    manliness= True
+ 15 
+ 16     if manliness:
+ 17         print("sure to win!")
+ 18 
+ 19     else:
+ 20         print("a spineless pale pathetic lot.")

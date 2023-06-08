@@ -1,0 +1,42 @@
+Figure 1.
+---
+- name: survey
+  hosts: planetexpress
+  gather_facts: no
+
+  tasks:
+
+  - debug:
+      var: ansible_facts
+
+====================
+Figure 2.
+---
+- name: survey
+  hosts: planetexpress
+  gather_facts: no
+
+  tasks:
+  
+  - name: a big ol' block
+    block:
+      - debug:
+          msg: 1
+
+      - fail:
+          msg: 2
+
+      - debug:
+          msg: 3
+
+    rescue:
+      - debug:
+          msg: 4
+
+    always:
+      - debug:
+          msg: 5
+
+
+
+

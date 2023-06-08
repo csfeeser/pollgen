@@ -1,127 +1,131 @@
----
 - question: Which of the following is NOT a difference between JSON and Python?
   answers:
-    - true/false vs. True/False
-    - null vs. None
-    - JSON is "double quotes" ONLY, while Python can use 'single' or "double"
-      quotes
-    - all the above are correct
+    - "true/false vs. True/False"
+    - "null vs. None"
+    - "JSON is 'double quotes' ONLY, while Python can use 'single' or 'double' quotes"
+    - "all the above are correct"
+  correct: "all the above are correct"
   day: 2
-- question: Which of the following requests.Response methods would pull/translate
-    JSON taken from API requests?
+
+- question: Which of the following requests.Response methods would pull/translate JSON taken from API requests?
   answers:
-    - .json()
-    - .text
-    - .content
+    - ".json()"
+    - ".text"
+    - ".content"
+  correct: ".json()"
   day: 2
-- question: When using regular expression in a string in Python, what letter
-    should replace the ? mark --> ?"aa+bc"
+
+- question: When using regular expression in a string in Python, what letter should replace the ? mark --> ?"aa+bc"
   answers:
-    - r
+    - "r"
     - "*"
-    - +
+    - "+"
+  correct: "r"
   day: 2
-- question: What will be matched by the following regex expression? ---> \.
+
+- question: What will be matched by the following regex expression? ---> \\.
   answers:
-    - any character
-    - any number
-    - any alpha character (abcdefg)
-    - periods -> .
+    - "any character"
+    - "any number"
+    - "any alpha character (abcdefg)"
+    - "periods -> ."
+  correct: "periods -> ."
   day: 2
-- question: In the picture on Chad's screen, what type of object is x?
+
+- question: What is the primary data type of object in a pandas library?
   answers:
-    - DataFrame
-    - Series
-    - Function
-    - Method
+    - "DataFrame"
+    - "Series"
+    - "Function"
+    - "Method"
+  correct: "DataFrame"
   day: 3
-- question: In the picture on Chad's screen, what type of object is y?
-  answers:
-    - DataFrame
-    - Series
-    - Function
-    - Method
-  day: 3
-- question: In the picture on Chad's screen, what kind of object is z?
-  answers:
-    - DataFrame
-    - Series
-    - Function
-    - Method
-  day: 3
+
 - question: When a cell is missing data, what will Pandas put in that cell?
   answers:
-    - None
-    - null
-    - NaN
-    - 0
+    - "None"
+    - "null"
+    - "NaN"
+    - "0"
+  correct: "NaN"
   day: 3
-- question: If you want to return a row by its index number (not its label), you
-    would use-
+
+- question: If you want to return a row by its index number (not its label), you would use-
   answers:
-    - .loc
-    - .iloc
-    - .row
+    - ".loc"
+    - ".iloc"
+    - ".row"
+  correct: ".iloc"
   day: 3
-- question: In Figure 1, across all three database modules the value of x is
-    essentially what?
+
+- question: In Figure 1, across all three database modules the value of x is essentially what?
   answers:
-    - the connection to the database
-    - the connection to the module (sqlite3, pymongo, etc.)
-    - the connection to the data being added to the database
+    - "the connection to the database"
+    - "the connection to the module (sqlite3, pymongo, etc.)"
+    - "the connection to the data being added to the database"
+  correct: "the connection to the module (sqlite3, pymongo, etc.)"
   day: 4
-- question: In SQL databases, after making any change (INSERT, UPDATE, DELETE) you
-    must ALWAYS _______ afterwards or the changes won't "stick."
+
+- question: In SQL databases, after making any change (INSERT, UPDATE, DELETE) you must ALWAYS _______ afterwards or the changes won't "stick."
   answers:
-    - .close()
-    - .commit()
-    - .execute()
-    - .connect()
+    - ".close()"
+    - ".commit()"
+    - ".execute()"
+    - ".connect()"
+  correct: ".commit()"
   day: 4
-- question: In Figure 2 on Chad's screen, how many types of cheese will appear in
-    the plot diagram created by this code?
+
+- question: In Figure 2 on Chad's screen, how many types of cheese will appear in the plot diagram created by this code?
   answers:
-    - 1
-    - 2
-    - 3
-    - 4
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+  correct: "3"
   day: 4
-- question: Take a look at Figure 2. How many boxes of data are going to be
-    displayed in the finished product?
+
+- question: Take a look at Figure 2. How many boxes of data are going to be displayed in the finished product?
   answers:
-    - 1 📈
-    - 2 📈 📊
-    - 3 📈 📊 📉
-    - 4 📈 📊 📉 💹
+    - "1 📈"
+    - "2 📈 📊"
+    - "3 📈 📊 📉"
+    - "4 📈 📊 📉 💹"
+  correct: "2 📈 📊"
   day: 4
+
 - question: Which of the following is NOT a difference between JSON and Python?
   answers:
-    - true/false vs. True/False
-    - null vs. None
-    - JSON is "double quotes" ONLY, while Python can use 'single' or "double"
-      quotes
-    - all the above are correct
+    - "true/false vs. True/False"
+    - "null vs. None"
+    - "JSON is 'double quotes' ONLY, while Python can use 'single' or 'double' quotes"
+    - "all the above are correct"
+  correct: "all the above are correct"
   day: 5
+
 - question: What matplotlib ax method will add text and/or an arrow on your graph?
   answers:
-    - .annotate()
-    - .label()
-    - .scribble()
+    - ".annotate()"
+    - ".label()"
+    - ".scribble()"
+  correct: ".annotate()"
   day: 5
-- question: In Figure 2 on Chad's screen, what would be returned from
-    heroes[1]["power"][1]?
+
+- question: In Figure 2 on Chad's screen, what would be returned from heroes[1]['power'][1]?
   answers:
-    - regeneration
-    - sass
-    - super strength
-    - invulnerability
-    - magic
-    - mind control
+    - "regeneration"
+    - "sass"
+    - "super strength"
+    - "invulnerability"
+    - "magic"
+    - "mind control"
+  correct: "sass"
   day: 5
+
 - question: I want 25 equally-spaced numbers between 1 and 100. Which would do that?
   answers:
-    - np.linspace(1, 100, 25)
-    - np.linspace(1, 100)
-    - np.arange(1, 100, 25)
-    - np.arange(1, 100)
+    - "np.linspace(1, 100, 25)"
+    - "np.linspace(1, 100)"
+    - "np.arange(1, 100, 25)"
+    - "np.arange(1, 100)"
+  correct: "np.linspace(1, 100, 25)"
   day: 5

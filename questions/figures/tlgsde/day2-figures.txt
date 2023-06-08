@@ -1,0 +1,16 @@
+Figure 1.
+
+marvel= ["Thor","Hulk","Wasp","Black Panther"]
+
+==========================================================
+Figure 2.
+
+spidey= {'Real name':'Peter Parker',
+         'First Appearance':'Amazing Fantasy (vol. 1)',
+         'Creators':['Stan Lee','Steve Ditko'],
+         'Base of Operations':'New York City, New York'}
+
+==========================================================
+Figure 3.
+
+Usage: zork [a] -b GAMETITLE

@@ -1,0 +1,28 @@
+Figure 1.
+
+.lower() <-- str. method makes text lowercase.
+x= 3.14
+y= "3.14"
+z= "3"
+
+======================================================
+Figure 2.
+
+heroes= ["Spider-man", "Black Widow", "Hulk", "Storm"]
+
+======================================================
+Figure 3.
+
+marvelchars= {
+                "Starlord":
+                  {
+                   "real name": "peter quill",
+                   "powers": "dance moves",
+                   "archenemy": "Thanos"},
+                "Mystique":
+                  {
+                   "real name": "raven darkholme",
+                   "powers": "shape shifter",
+                   "archenemy": "Professor X"
+                  }
+             }

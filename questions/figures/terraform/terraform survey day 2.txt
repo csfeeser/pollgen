@@ -1,0 +1,16 @@
+Figure 2
+
+  1 resource "docker_container" "nginx" {
+  2   image = docker_image.nginx.latest
+  3   name  = ???
+  4   ports {
+  5     internal = 80
+  6     external = 8089
+  7   }
+  8 }
+  9 
+ 10 variable "container_name" {
+ 11   type    = string
+ 12   default = "ExampleNginxContainer"
+ 13   }
+

@@ -1,179 +1,161 @@
-- question: "Which tool is commonly used to define, build, and modify container images?"
+---
+- question: Which tool is commonly used to define, build, and modify container images?
   answers:
     - Docker
     - Kubernetes
     - Ansible
     - Jenkins
   correct: Docker
-
-- question: "What is the primary purpose of Kubernetes?"
+- question: What is the primary purpose of Kubernetes?
   answers:
     - Building container images
     - Managing containerized applications
     - Automating infrastructure provisioning
     - Running virtual machines
   correct: Managing containerized applications
-
-- question: "Which tool is commonly used to deploy Kubernetes clusters using infrastructure-as-code principles?"
+- question: Which tool is commonly used to deploy Kubernetes clusters using
+    infrastructure-as-code principles?
   answers:
     - Terraform
     - Ansible
     - Chef
     - Puppet
   correct: Terraform
-
-- question: "What is the role of the Kubernetes control plane?"
+- question: What is the role of the Kubernetes control plane?
   answers:
     - Managing containerized applications
     - Scheduling and orchestrating containers
     - Building container images
     - Monitoring resource usage
   correct: Scheduling and orchestrating containers
-
-- question: "What is the purpose of deploying a microservices boutique?"
+- question: What is the purpose of deploying a microservices boutique?
   answers:
     - To explore different microservice integration patterns
     - To test the scalability of microservices
     - To demonstrate the benefits of containerization
     - To showcase the use of service registries
   correct: To demonstrate the benefits of containerization
-
-- question: "In the context of microservices, what is a monolith?"
+- question: In the context of microservices, what is a monolith?
   answers:
     - A single, self-contained application with tightly coupled components
     - A distributed system composed of loosely coupled services
     - A containerized application running on Kubernetes
     - A specialized type of Kubernetes pod
   correct: A single, self-contained application with tightly coupled components
-
-- question: "In Kubernetes, what is a service?"
+- question: In Kubernetes, what is a service?
   answers:
     - A managed database service
     - A cloud-based storage service
     - An abstraction layer that provides network connectivity to a set of pods
     - A container image repository
   correct: An abstraction layer that provides network connectivity to a set of pods
-
-- question: "What is the purpose of service discovery in a microservices architecture?"
+- question: What is the purpose of service discovery in a microservices architecture?
   answers:
     - To monitor and collect metrics from microservices
     - To enable communication between microservices
     - To deploy microservices to multiple environments
     - To manage persistent storage for microservices
   correct: To enable communication between microservices
-
-- question: "What is the role of a service registry in a microservices architecture?"
+- question: What is the role of a service registry in a microservices architecture?
   answers:
     - To store and manage container images
     - To track the health and availability of microservices
     - To handle authentication and authorization for microservices
     - To manage access control policies for Kubernetes clusters
   correct: To track the health and availability of microservices
-
-- question: "What is the purpose of patching a monolith in a microservices architecture?"
+- question: What is the purpose of patching a monolith in a microservices architecture?
   answers:
     - To update the monolith with the latest security patches
     - To refactor the monolith into microservices
     - To scale the monolith horizontally
     - To deploy the monolith to a different cloud provider
   correct: To update the monolith with the latest security patches
-
-- question: "How does a monolith connect to a service registry?"
+- question: How does a monolith connect to a service registry?
   answers:
     - By using DNS-based service discovery
     - By directly querying the service registry's API
     - By establishing a VPN connection to the service registry
     - By integrating with a container orchestration platform
   correct: By directly querying the service registry's API
-
-- question: "What are microservices transition patterns?"
+- question: What are microservices transition patterns?
   answers:
     - Design patterns used to develop microservices
     - Strategies for migrating from a monolithic architecture to microservices
     - Techniques for load balancing microservices
-    - Best practices for securing microservices
-
- communication
+    - Best practices for securing microservices communication
   correct: Strategies for migrating from a monolithic architecture to microservices
-
-- question: "What is a sidecar container in the context of microservices?"
+- question: What is a sidecar container in the context of microservices?
   answers:
     - A container that provides additional functionality to a primary container
     - A container used for load balancing microservices
     - A container that manages persistent storage for microservices
     - A container that deploys microservices to multiple environments
   correct: A container that provides additional functionality to a primary container
-
-- question: "What is the purpose of an API gateway in a microservices architecture?"
+- question: What is the purpose of an API gateway in a microservices architecture?
   answers:
     - To manage access control policies for microservices
     - To route and proxy requests to the appropriate microservice
     - To handle authentication and authorization for microservices
     - To monitor and collect metrics from microservices
   correct: To route and proxy requests to the appropriate microservice
-
-- question: "What is the role of a message broker in a microservices architecture?"
+- question: What is the role of a message broker in a microservices architecture?
   answers:
     - To track the health and availability of microservices
     - To enable asynchronous communication between microservices
     - To store and manage container images
     - To scale the monolith horizontally
   correct: To enable asynchronous communication between microservices
-
-- question: "What is the purpose of a circuit breaker pattern in microservices?"
+- question: What is the purpose of a circuit breaker pattern in microservices?
   answers:
     - To refactor the monolith into microservices
-    - To handle failures and prevent cascading failures in microservices communication
+    - To handle failures and prevent cascading failures in microservices
+      communication
     - To update the monolith with the latest security patches
     - To deploy the monolith to a different cloud provider
-  correct: To handle failures and prevent cascading failures in microservices communication
-
-- question: "What is the role of an orchestrator in container orchestration platforms like Kubernetes?"
+  correct: To handle failures and prevent cascading failures in microservices
+    communication
+- question: What is the role of an orchestrator in container orchestration
+    platforms like Kubernetes?
   answers:
     - To manage the lifecycle of containers and schedule them onto nodes
     - To monitor resource usage and collect metrics from containers
     - To provide network connectivity to a set of pods
     - To store and manage container images
   correct: To manage the lifecycle of containers and schedule them onto nodes
-
-- question: "What is a container registry in the context of containerization?"
+- question: What is a container registry in the context of containerization?
   answers:
     - A managed database service
     - A cloud-based storage service
     - A repository for storing and distributing container images
     - An abstraction layer that provides network connectivity to a set of pods
   correct: A repository for storing and distributing container images
-
-- question: "What is the purpose of containerization?"
+- question: What is the purpose of containerization?
   answers:
     - To enable easier deployment and scalability of applications
     - To manage access control policies for microservices
     - To handle authentication and authorization for microservices
     - To track the health and availability of microservices
   correct: To enable easier deployment and scalability of applications
-
-- question: "What is the role of a load balancer in a microservices architecture?"
+- question: What is the role of a load balancer in a microservices architecture?
   answers:
     - To refactor the monolith into microservices
-    - To distribute incoming network traffic across multiple instances of a microservice
+    - To distribute incoming network traffic across multiple instances of a
+      microservice
     - To update the monolith with the latest security patches
     - To deploy the monolith to a different cloud provider
-  correct: To distribute incoming network traffic across multiple instances of a microservice
-
-- question: "What is the purpose of scaling in a microservices architecture?"
+  correct: To distribute incoming network traffic across multiple instances of a
+    microservice
+- question: What is the purpose of scaling in a microservices architecture?
   answers:
     - To test the scalability of microservices
     - To enable easier deployment and scalability of applications
     - To showcase the use of service registries
     - To explore different microservice integration patterns
   correct: To enable easier deployment and scalability of applications
-
-- question: "What is the role of a reverse proxy in a microservices architecture?"
+- question: What is the role of a reverse proxy in a microservices architecture?
   answers:
     - To route and proxy requests to the appropriate microservice
-   
-
- - To manage the lifecycle of containers and schedule them onto nodes
+    - To manage the lifecycle of containers and schedule them onto nodes
     - To provide network connectivity to a set of pods
     - To store and manage container images
   correct: To route and proxy requests to the appropriate microservice

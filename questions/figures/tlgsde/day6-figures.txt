@@ -1,0 +1,38 @@
+
+Figure 1
+================================================================
+#!/usr/bin/python3
+"""Class definition for RPG game"""
+
+# from standard library
+import random
+
+# create Hero class
+class Hero:
+    def __init__(self, name):
+        self.dice = []
+        
+        self.name = str(name)
+                
+        self.spells = []
+        self.strength = 0
+        self.wisdom = 0
+        self.dexterity = 0
+        self.hitpoints = 0
+        
+    def attack(self):
+        """returns an attack between 0 and 10"""
+        return random.randint(0,10)    # inclusive 0 to 10
+        
+    def defend(self):
+        """returns defend 0 (fail) or 1 (success)"""
+        return random.randint(0,1)  # defends or does not
+        
+    def spell(self, spell)
+        if spell in self.spells:
+            return f"You cast {spell}"
+        else:
+            return f"You do not know {spell}"
+            
+    def heal(self, points)
+        self.hitpoints = self.hitpoints + points

@@ -1,0 +1,14 @@
+Figure 1.
+
+a,b,c= ["good","morning","everyone"]
+
+====================================
+Figure 2.
+
+x= "0"
+
+try:
+   print(100 - int(x))    
+
+except:
+   print("An error has occurred!")

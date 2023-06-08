@@ -12,9 +12,6 @@
   - heroes[3]
   day: 2
 
-- question: In Figure 3, how would you return "Thanos" from this dictionary?
-  day: 2
-
 - question: In Figure 4, which "Response #" print function would run?
   answers:
   - Response 1!
@@ -69,7 +66,7 @@
   - Linux
   day: 3
 
-- question: In Figure 1 on Chad's screen, line 4 is a _______, lines 5-6 are both a _______, and lines 3 and 7 are both a _______.
+- question: In Figure 1 on the instructor's screen, line 4 is a _______, lines 5-6 are both a _______, and lines 3 and 7 are both a _______.
   answers:
   - module, parameter, keyword
   - module, keyword, parameter
@@ -107,10 +104,7 @@
   - Playbooks, Plays, Tasks
   day: 4
 
-- question: For Ansible to execute code on Linux hosts, what must be installed on that host?
-  day: 4
-
-- question: In Figure 1 on Chad's screen, line 4 is a _______, lines 5-6 are both a _______, and lines 3 and 7 are both a _______.
+- question: In Figure 1 on the instructor's screen, line 4 is a _______, lines 5-6 are both a _______, and lines 3 and 7 are both a _______.
   answers:
   - module, parameter, keyword
   - module, keyword, parameter

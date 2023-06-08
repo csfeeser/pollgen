@@ -1,0 +1,30 @@
+FIGURE 1.
+surveydict= {"x":"good",
+             "y":"great",
+             "z":"awesome"}
+
+def surveyfunc(x,y,z):
+    print("Hope your last day is " + z + "!")
+
+surveyfunc(**surveydict)
+===============================================
+FIGURE 2.
+import netmiko
+
+ALPHA = ConnectHandler(device_type='cisco_nxos',
+                       ip='sandbox-nxos-1.cisco.com',
+                       username='admin', 
+                       password="Admin_1234!")
+        
+BRAVO = open_connection.send_command("show ver")
+
+================================================
+FIGURE 3.
+
+def function3(charlie):
+    if charlie < 10:
+       return True
+    else:
+       return False
+
+function3(5)

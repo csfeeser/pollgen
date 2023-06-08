@@ -4,6 +4,7 @@ import requests
 import io
 import html
 from datetime import datetime
+from pprint import pprint
 
 app = Flask(__name__)
 app.secret_key = "any random string"
@@ -97,6 +98,7 @@ def result(course):
             else:
                 figures_present= False
 
+            pprint(yaml_data)
             return render_template('choices.html', course=course, questions=yaml_data, figures_present= figures_present, figures_path= figures_repo)
 
         else:

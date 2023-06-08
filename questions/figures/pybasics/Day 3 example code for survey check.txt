@@ -1,0 +1,27 @@
+Figure 1.
+
+letters= [{"letter":"a"},{"letter":"b"}]
+
+for x in letters:
+    print(x["letter"], end= " ")
+
+========================================
+Figure 2.
+
+with open("newfile.txt") as foo:
+    print("Success!", file= foo)
+
+========================================
+Figure 3.
+
+bar= open("newfile2.txt")
+
+zoink= bar.readlines()
+
+========================================
+Figure 4.
+
+def demo(word1, word2):
+    print(f"{word1} is {word2}!")
+
+demo(word2="Python", word1="awesome")

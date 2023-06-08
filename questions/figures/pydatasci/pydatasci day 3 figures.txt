@@ -1,0 +1,15 @@
+import pandas as pd
+
+heroes= {
+   "name": ["Wonder Woman", "Batman", "Superman"],
+   "alterego": ["Diana Prince","Bruce Wayne", "Clark Kent"],
+   "power": ["lasso of truth", "money", "super strength"]
+}
+
+
+x= pd.DataFrame(heroes)
+
+y= x["power"]
+
+z= x[["name", "alterego"]]
+

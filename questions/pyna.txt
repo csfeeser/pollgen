@@ -1,4 +1,3 @@
----
 - question: Which of the following is NOT a difference between JSON and Python format?
   answers:
     - True/False vs. true/false
@@ -12,22 +11,20 @@
     - dictionary
     - series
   day: 2
-- question: Check out figure 1 on Chad's screen. What should go in the place of ??
+- question: Check out figure 1 on the instructor's screen. What should go in the place of ??
     in the code?
   answers:
     - r
     - w
     - a
   day: 2
-- question: Check out the code in Figure 1 on Chad's screen. What will be the
-    output of this code?
+- question: Check out the code in Figure 1 on the instructor's screen. What will be the output of this code?
   answers:
     - 15
     - 20
     - 25
   day: 3
-- question: The os.system() function is a handy tool. Any argument passed to this
-    function will be-
+- question: The os.system() function is a handy tool. Any argument passed to this function will be-
   answers:
     - executed as a Linux command in our environment
     - used to configure our OS system
@@ -40,7 +37,7 @@
     - PUT
     - DELETE
   day: 3
-- question: In Figure 2 on Chad's screen, what type of object will x be?
+- question: In Figure 2 on the instructor's screen, what type of object will x be?
   answers:
     - dictionary
     - list
@@ -59,7 +56,7 @@
     - requests
     - BeautifulSoup
   day: 4
-- question: Take a look at Figure 1 on Chad's screen. What will the value of "b" be?
+- question: Take a look at Figure 1 on the instructor's screen. What will the value of "b" be?
   answers:
     - - good
       - morning

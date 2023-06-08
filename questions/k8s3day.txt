@@ -1,15 +1,19 @@
 - question: "A POD will not start, the error is Pull Failure. What is the likely cause?"
-  answers:
-  - "The image name is incorrect"
-  - "The POD is already running"
-  - "Wrong version on the POD manifest"
+  options:
+    - "The image name is incorrect"
+    - "The POD is already running"
+    - "Wrong version on the POD manifest"
+    - "No answer"
+  correct: "The image name is incorrect"
   day: 2
 
 - question: "Which are common to all containers in the same POD?"
-  answers:
-  - "CGROUP, NETNS, UTS"
-  - "MOUNT, NAME, IMAGEID"
-  - "IPC, NETNS, UTS"
+  options:
+    - "CGROUP, NETNS, UTS"
+    - "MOUNT, NAME, IMAGEID"
+    - "IPC, NETNS, UTS"
+    - "No answer"
+  correct: "CGROUP, NETNS, UTS"
   day: 2
 
 - question: "The controlling service on a worker node"
@@ -17,60 +21,68 @@
   day: 2
 
 - question: "Which command will provide bash access to an nginx pod?"
-  answers:
-  - "kubectl exec -it nginx -- sh"
-  - "kubectl shell -it nginx"
-  - "kubectl access nginx -- shell"
-  - "Please connect me to pod nginx using shell"
+  options:
+    - "kubectl exec -it nginx -- sh"
+    - "kubectl shell -it nginx"
+    - "kubectl access nginx -- shell"
+    - "Please connect me to pod nginx using shell"
+  correct: "kubectl exec -it nginx -- sh"
   day: 2
 
 - question: "Which Probe tests if the pod is booted?"
-  answers:
-  - "livenessProbe"
-  - "UP"
-  - "readinessProbe"
-  - "httpGetProbe"
+  options:
+    - "livenessProbe"
+    - "UP"
+    - "readinessProbe"
+    - "httpGetProbe"
+  correct: "readinessProbe"
   day: 2
 
 - question: "TRUE OR FALSE: You can use a security context to forbid exec-ing into a container as root. (lab 21, step 2)"
-  answers:
-  - "True"
-  - "False"
+  options:
+    - "True"
+    - "False"
+  correct: "True"
   day: 3
 
 - question: "A resource.request establishes the following (Choose the BEST answer):"
-  answers:
-  - "Minimum resources for pod to run"
-  - "Maximum resources for container to run"
-  - "Establishes storage maximum"
-  - "Minimum resources to run, defined per container"
+  options:
+    - "Minimum resources for pod to run"
+    - "Maximum resources for container to run"
+    - "Establishes storage maximum"
+    - "Minimum resources to run, defined per container"
+  correct: "Minimum resources for pod to run"
   day: 3
 
 - question: "What identifier is used to link replicated pods back to the deployment object?"
-  answers:
-  - "Asset"
-  - "Deploymenbty-id <---> podID"
-  - "spec.selector, matchlabels. <labels> <---> spec.template.metadata.labels"
-  - "metadata name <---> pod label"
+  options:
+    - "Asset"
+    - "Deploymenbty-id <---> podID"
+    - "spec.selector, matchlabels. <labels> <---> spec.template.metadata.labels"
+    - "metadata name <---> pod label"
+  correct: "spec.selector, matchlabels. <labels> <---> spec.template.metadata.labels"
   day: 3
 
 - question: "RBAC allows you to control the following. Choose the WRONG answer"
-  answers:
-  - "Defines NORMAL USER and SERVICE account access rule"
-  - "Allows access rules to be defined by verb (get, describe, list, etc)"
-  - "Use a ClusterRole binding to control access by namespace"
+  options:
+    - "Defines NORMAL USER and SERVICE account access rule"
+    - "Allows access rules to be defined by verb (get, describe, list, etc)"
+    - "Use a ClusterRole binding to control access by namespace"
+  correct: "No answer"
   day: 3
 
 - question: "True/False: secrets, configmap, PVC objects follow a similar configuration pattern: spec.containers[x].volumeMounts --> spec.volues[x] --> k8s storage object"
-  answers:
-  - "True"
-  - "False"
+  options:
+    - "True"
+    - "False"
+  correct: "True"
   day: 3
 
 - question: "The Persistent storage object, operated by the cloud provider that interfaces with the actual storage hardware"
-  answers:
-  - "PV"
-  - "PVC"
-  - "SC"
-  - "VC"
+  options:
+    - "PV"
+    - "PVC"
+    - "SC"
+    - "VC"
+  correct: "PV"
   day: 3

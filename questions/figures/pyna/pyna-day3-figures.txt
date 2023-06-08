@@ -1,0 +1,21 @@
+FIGURE 1
+
+a= 5
+b= 10
+c= 15
+
+def demo(x):
+   y= x + 10
+   return y
+
+print(demo(a))
+========================================================
+FIGURE 2
+
+dictlist= [{"name": "Wolverine", "power": "claws"},
+           {"name": "Magneto", "power": "magnetism"},
+           {"name": "Storm", "power": "weather control"}
+          ]
+
+for x in dictlist:
+     print(x)

@@ -7,7 +7,7 @@
     - output
   day: 2
 
-- question: "In Figure 1 on Chad's screen, what part of the block is 1?"
+- question: "In Figure 1 on the instructor's screen, what part of the block is 1?"
   answers:
     - argument
     - label
@@ -15,7 +15,7 @@
     - block body
   day: 2
 
-- question: "In Figure 1 on Chad's screen, what part of the block is 2?"
+- question: "In Figure 1 on the instructor's screen, what part of the block is 2?"
   answers:
     - argument
     - label
@@ -23,7 +23,7 @@
     - block body
   day: 2
 
-- question: "In Figure 1 on Chad's screen, what part of the block is 3?"
+- question: "In Figure 1 on the instructor's screen, what part of the block is 3?"
   answers:
     - argument
     - label
@@ -31,7 +31,7 @@
     - block body
   day: 2
 
-- question: "In Figure 1 on Chad's screen, what part of the block is 4?"
+- question: "In Figure 1 on the instructor's screen, what part of the block is 4?"
   answers:
     - argument
     - label
@@ -39,7 +39,7 @@
     - block body
   day: 2
 
-- question: "In Figure 2 on Chad's screen, look at line 3. We'd like to define the name of the container using the variable block below. What should replace the \"???\" on that line?"
+- question: "In Figure 2 on the instructor's screen, look at line 3. We'd like to define the name of the container using the variable block below. What should replace the \"???\" on that line?"
   type: text
   day: 2
 

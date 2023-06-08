@@ -1,0 +1,31 @@
+FIGURE 1.
+
+%Y ⇦ Year with century (e.g. 2013, 1932)
+%m ⇦ Month as a zero-padded decimal number (e.g. 01, 02, 12)
+%d ⇦ Day of the month as a zero-padded decimal number. (e.g. 01, 14, 31)
+%I ⇦ Hour (12-hour clock) as a zero-padded decimal number.
+%H ⇦ Hour (24-hour clock) as a zero-padded decimal number.
+%M ⇦ Minute as a zero-padded decimal number.
+%S ⇦ Second as a zero-padded decimal number.
+
+FIGURE 2.
+
+- Deadpool:
+      name: Wade Wilson
+      powers: 
+        - regeneration
+        - sass
+- Hulk:
+       name: Bruce Banner
+       powers: 
+         - super strength
+         - invulnerability
+- Scarlet Witch:
+       name: Wanda Maximo
+       powers: 
+        - magic
+        - mind control
+
+FIGURE 3.
+
+alist= [0,2,3,4,5,6,7,8,9,10]

@@ -1,0 +1,30 @@
+FIGURE 1.
+
+demo= {
+       "a":"letter",
+       "b":"letter"
+      }
+      
+for x in demo:
+    print(x, end=" ")
+
+=====================================
+FIGURE 2.
+
+# assume that the file "/home/alta3/newfile.txt" exists
+# and the current user is "alta3" with permission to read "newfile.txt"
+y = open("/home/alta3/newfile.txt")
+print(y.read())
+
+=====================================
+FIGURE 3.
+
+with open("otherfile.txt") as zoink:
+    for x in zoink:
+        print(x)
+
+=====================================
+FIGURE 4.
+
+fig4 = {"1": "Python", "2": "awesome", "a": "python", "b": "is", "c": "Awesome", "d": "!"}
+print(f'{fig4.get("2")} {fig4.get("b")} {fig4.get("1")}{fig4.get("d")}')

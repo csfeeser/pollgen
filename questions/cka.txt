@@ -4,6 +4,7 @@
   - "Putting all our application's code in one giant block."
   - "Breaking our code into big chunks so they aren't quite as unwieldy."
   day: 2
+  correct: "The application is separated into individual components, each put into a container-- these pieces add up to the whole."
 
 - question: "Which of these is correctly listed from SMALLEST to LARGEST?"
   answers:
@@ -11,6 +12,7 @@
   - "Cluster < Node < Pod < Container"
   - "Node < Cluster < Container < Pod"
   day: 2
+  correct: "Container < Pod < Node < Cluster"
 
 - question: "Which of these Controller Node components keeps track of the state of the cluster (names/status of pods, namespaces, etc.)"
   answers:
@@ -18,6 +20,7 @@
   - "etcd"
   - "controller manager"
   day: 2
+  correct: "etcd"
 
 - question: "Which tool will enable you to create your own Kubernetes cluster?"
   answers:
@@ -26,9 +29,11 @@
   - "kubeadm"
   - "kubefilter"
   day: 2
+  correct: "kubeadm"
 
 - question: "After the initial controller node is created in a new cluster, how are additional worker nodes into the cluster?"
   day: 2
+  correct: "They are joined to the cluster using kubeadm."
 
 - question: "Which tool will enable you to save/restore etcd from a previous state?"
   answers:
@@ -37,6 +42,7 @@
   - "etcd archive"
   - "etcd cache"
   day: 3
+  correct: "etcd snapshot"
 
 - question: "Which of the following is NOT a necessary step in upgrading the Kubernetes version of a node?"
   answers:
@@ -46,6 +52,7 @@
   - "hold kubeadm/kubelet/kubectl at matching versions"
   - "all the above are correct"
   day: 3
+  correct: "all the above are correct"
 
 - question: "When creating a Dockerfile to build a new image, which verb will specify the container's port number?"
   answers:
@@ -54,6 +61,7 @@
   - "CMD"
   - "EXPOSE"
   day: 3
+  correct: "EXPOSE"
 
 - question: "Which of these is NOT a reason to use namespaces?"
   answers:
@@ -62,6 +70,7 @@
   - "Able to reuse names of Pods"
   - "Namespaces keep a running log of who has been making changes"
   day: 3
+  correct: "Namespaces keep a running log of who has been making changes"
 
 - question: "What do we call the blueprint that is used to create Kubernetes objects?"
   answers:
@@ -69,9 +78,13 @@
   - "Image"
   - "Blueprint"
   day: 3
+  correct: "Manifest"
 
 - question: "When using kubeadm, how are additional worker nodes added into the cluster?"
   day: 3
+  correct: "They are joined to the cluster using k
+
+ubeadm."
 
 - question: "Look at Figure 1 on the screen. The user BOB has been assigned the role DEMOROLE. Which of the following commands can BOB ***NOT*** do?"
   answers:
@@ -80,6 +93,7 @@
   - "kubectl delete services -n prod"
   - "kubectl get secrets -n prod"
   day: 4
+  correct: "kubectl delete services -n prod"
 
 - question: "A set of rules that instructs an account what it is allowed to do in a SPECIFIC NAMESPACE is called a:"
   answers:
@@ -88,6 +102,7 @@
   - "clusterrole"
   - "clusterrolebinding"
   day: 4
+  correct: "rolebinding"
 
 - question: "Which of the following WON'T cause a problem in how you configure your Readiness and Liveness probes?"
   answers:
@@ -95,6 +110,7 @@
   - "Giving the wrong endpoint/file for the probe to target/'poke'"
   - "Assigning both Readiness and Liveness probes to the same container"
   day: 4
+  correct: "Assigning both Readiness and Liveness probes to the same container"
 
 - question: "What container parameter is used to guarantee that a container has a certain amount of resources reserved/guaranteed for its use?"
   answers:
@@ -102,6 +118,7 @@
   - "resourcequota"
   - "limits"
   day: 4
+  correct: "requests"
 
 - question: "What command will show you the resource consumption of Kubernetes objects?"
   answers:
@@ -109,6 +126,7 @@
   - "kubectl resource"
   - "kubectl describe"
   day: 4
+  correct: "kubectl top"
 
 - question: "You want to set up your namespace so that all created pods automatically have a default requests/limits parameter. Which tool would you use?"
   answers:
@@ -117,6 +135,7 @@
   - "I am confident the answer is LIMIT RANGE."
   - "Not super confident, but... LIMIT RANGE?"
   day: 4
+  correct: "LIMIT RANGE"
 
 - question: "How can files be added to containers in a way that is EASY/FAST to update/replace them AND persist across container reboot?"
   answers:
@@ -124,6 +143,7 @@
   - "configmap"
   - "rebuild the image"
   day: 4
+  correct: "configmap"
 
 - question: "Where are container logs stored?"
   answers:
@@ -132,6 +152,7 @@
   - "etcd"
   - "On the node."
   day: 5
+  correct: "On the node."
 
 - question: "What part of an object's metadata serves as a 'tag,' allowing you to group, view, and operate many objects at once?"
   answers:
@@ -139,6 +160,7 @@
   - "annotation"
   - "name"
   day: 5
+  correct: "label"
 
 - question: "Which of the following statements about deployments is FALSE:"
   answers:
@@ -147,17 +169,22 @@
   - "deployments are able to roll back to previous versions"
   - "deployments don't replace their pods if they happen to be deleted"
   day: 5
+  correct: "deployments don't replace their pods if they happen to be deleted"
 
-- question: "Objects like deployments and services rely on ______ to identify Pods that belong to them."
+- question: "Objects like deployments and
+
+ services rely on ______ to identify Pods that belong to them."
   answers:
   - "Labels"
   - "Annotations"
   - "Revisions"
   - "Replicas"
   day: 5
+  correct: "Labels"
 
 - question: "Using 'kubectl scale deploy nginx --replicas=3' will not only scale that deployment's replica count to three, it will edit the manifest (nginxdeploy.yml, for example) on your computer."
   answers:
   - "TRUE"
   - "FALSE"
   day: 5
+  correct: "FALSE"

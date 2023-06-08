@@ -1,0 +1,32 @@
+FIGURE 1.
+
+import sqlite3
+x = sqlite3.connect('test.db')
+
+import psycopg2
+x = psycopg2.connect(str_w_login_details)
+
+from pymongo import MongoClient
+client = MongoClient( "mongodb://127.0.0.1:27017/" )
+x = client.admin
+
+FIGURE 2.
+
+year= data["Year"]
+cheddar= data["Cheddar"]
+swiss= data["Swiss"]
+muenster= data["Muenster"]
+brick= data["Brick"]
+
+plt.plot(year, cheddar, label="Avg. Cheddar Consumed")
+plt.plot(year, swiss, label="Avg. Swiss Consumed")
+
+
+FIGURE 3.
+
+fig, (ax1, ax2)= plt.subplots(nrows=2, ncols=1, sharey=True)
+
+
+FIGURE 4.
+
+plt.yticks(np.arange(0, 81, 10))

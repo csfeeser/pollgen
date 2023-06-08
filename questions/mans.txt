@@ -1,0 +1,161 @@
+- question: "Which data structure in Python is commonly used in Ansible for organizing key-value pairs?"
+  day: 2
+  answers:
+    - "Dictionaries"
+    - "Lists"
+    - "JSON files"
+    - "YAML files"
+  correct: "Dictionaries"
+
+- question: "What data structure in Python is used to represent an ordered collection of items?"
+  day: 2
+  answers:
+    - "Dictionaries"
+    - "Lists"
+    - "JSON files"
+    - "YAML files"
+  correct: "Lists"
+
+- question: "Which file format is commonly used for human-readable data serialization in Ansible?"
+  day: 2
+  answers:
+    - "XML"
+    - "YAML"
+    - "CSV"
+    - "JSON"
+  correct: "YAML"
+
+- question: "In Ansible, what term is used to represent a piece of Python code that performs specific actions or operations and can be executed within a playbook?"
+  day: 2
+  answers:
+    - "Inventory"
+    - "Play"
+    - "Task"
+    - "Module"
+  correct: "Module"
+
+- question: "What is a key distinction between JSON and YAML in the context of Ansible?"
+  day: 2
+  answers:
+    - "JSON is more human-readable than YAML."
+    - "YAML supports complex data structures, while JSON does not."
+    - "JSON is commonly used for configuration files, while YAML is used for data serialization."
+    - "YAML allows comments, whereas JSON does not."
+  correct: "YAML supports complex data structures, while JSON does not."
+
+- question: "What feature in Ansible allows you to package and distribute content such as roles, modules, and plugins?"
+  day: 3
+  answers:
+    - "Collections"
+    - "Dynamic Inventory"
+    - "Ansible Lint"
+    - "AWX modules"
+  correct: "Collections"
+
+- question: "Which command-line tool is used to fetch Ansible content available on the Ansible Galaxy community hub?"
+  day: 3
+  answers:
+    - "ansible-builder"
+    - "ansible-runner"
+    - "Molecule"
+    - "ansible-galaxy"
+  correct: "ansible-galaxy"
+
+- question: "How can you automatically generate inventory for Ansible from external systems or scripts?"
+  day: 3
+  answers:
+    - "Using static files"
+    - "Using YAML syntax"
+    - "Using dynamic inventory"
+    - "Using Molecule"
+  correct: "Using dynamic inventory"
+
+- question: "Which of the following is NOT an example of a best practice when working with Ansible?"
+  day: 3
+  answers:
+    - "Writing modular and reusable playbooks."
+    - "Using version control to manage Ansible code."
+    - "Avoiding the use of hardcoded values in playbooks."
+    - "Running playbooks with elevated privileges using 'sudo'."
+  correct: "Running playbooks with elevated privileges using 'sudo'."
+
+- question: "Which tool is commonly used in the Ansible ecosystem to facilitate the testing and development of roles?"
+  day: 3
+  answers:
+    - "Galaxy"
+    - "Terraform"
+    - "Molecule"
+    - "Jenkins"
+  correct: "Molecule"
+
+- question: "What tool helps in identifying and automatically fixing potential issues in Ansible playbooks?"
+  day: 3
+  answers:
+    - "Ansible Lint"
+    - "AWX modules"
+    - "Pull Requests"
+    - "Deploying Kubernetes with Ansible"
+  correct: "Ansible Lint"
+
+- question: "What does the abbreviation 'CI/CD' stand for in the context of Ansible?"
+  day: 3
+  answers:
+    - "Control Interface/Command Directive"
+    - "Continuous Integration/Continuous Deployment"
+    - "Container Image/Deployment"
+    - "Configuration Item/Deployment"
+  correct: "Continuous Integration/Continuous Deployment"
+
+- question: "Which tool is specifically designed for executing Ansible playbooks, roles, and modules in a controlled and isolated environment?"
+  day: 4
+  answers:
+    - "Ansible Tower"
+    - "AWX"
+    - "ansible-runner"
+    - "Ansible Galaxy"
+  correct: "ansible-runner"
+
+- question: "Which tool is used to package and build custom Ansible execution environments, including dependencies and runtime configuration?"
+  day: 4
+  answers:
+    - "Ansible Tower"
+    - "AWX"
+    - "ansible-runner"
+    - "ansible-builder"
+  correct: "ansible-builder"
+
+- question: "What is the purpose of an Ansible Execution Environment?"
+  day: 4
+  answers:
+    - "To manage the execution of Ansible playbooks on remote hosts."
+    - "To provide a controlled and consistent runtime environment for Ansible."
+    - "To store and manage Ansible roles, modules, and plugins."
+    - "To enable communication between Ansible and external systems."
+  correct: "To provide a controlled and consistent runtime environment for Ansible."
+
+- question: "In the context of Ansible and automation triggers, what is a WebHook?"
+  day: 4
+  answers:
+    - "A type of Ansible module used for web scraping."
+    - "A Python library for building Ansible playbooks."
+    - "An HTTP callback that enables external systems to trigger Ansible actions."
+    - "A configuration file used to define Ansible inventory."
+  correct: "An HTTP callback that enables external systems to trigger Ansible actions."
+
+- question: "In GitLab, what is the name of the file used to define Continuous Integration/Continuous Deployment (CI/CD) pipelines?"
+  day: 4
+  answers:
+    - ".gitignore"
+    - ".gitlab-ci.yml"
+    - ".gitconfig"
+    - ".gitattributes"
+  correct: ".gitlab-ci.yml"
+
+- question: "Which tool provides a web-based graphical interface, role-based access control, and job scheduling for managing and executing Ansible playbooks?"
+  day: 4
+  answers:
+    - "Ansible Galaxy"
+    - "Ansible Runner"
+    - "Ansible Tower"
+    - "Ansible Builder"
+  correct: "Ansible Tower"

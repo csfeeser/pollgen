@@ -1,0 +1,9 @@
+REQUIRED FOR SURVEY
+
+import requests
+
+z= "https://anapioficeandfire.com/api/characters/583"
+
+y= requests.get(z)
+
+x= y.json()

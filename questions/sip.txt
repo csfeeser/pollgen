@@ -1,4 +1,3 @@
----
 - question: Which key fact is WRONG?
   answers:
     - A SIP response is a numeric value ranging 100 to 699

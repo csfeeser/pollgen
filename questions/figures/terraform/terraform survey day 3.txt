@@ -1,0 +1,11 @@
+Figure 1.
+
+1 variable "simpsons" {
+2   description = "Create IAM users with these names"
+3   type        = list(string)
+4   default     = ["homer", "marge", "bart", "lisa"]
+5 }
+6
+7 resource "aws_iam_user" "example" {
+8   for_each = toset(var.simpsons)
+9   name = ???

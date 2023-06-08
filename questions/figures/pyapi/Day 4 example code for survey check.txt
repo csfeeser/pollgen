@@ -1,0 +1,16 @@
+
+
+x= "Slappy"
+
+@app.route("/example1/<y>")
+def example1(y):
+    return f"Hello {y}!"
+
+@app.route("/example2")
+def example2():
+    return redirect("/example1/Happy")
+
+@app.route("/example3")
+def example3():
+    print("Hello, world!")
+    return "World, hello!"

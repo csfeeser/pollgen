@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Questionnaire</title>
+    <title>PollGen</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,8 +47,13 @@
 </head>
 <body>
     <form method="POST" action="/download">
+        <div style="text-align: center;">
+            <h2>{{ course|upper }} POLL GENERATOR</h2>
+          </div>
         <h3>Check all questions you'd like to include. Then click "Submit" to download a WebEx poll file!</h3>
         <a href="/addnew">Click HERE to add a new question</a>
+        <a href="/day1/{{course}}" download>Click here to download the DAY 1 welcome survey file</a>
+
         {% set choices = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" %}
 
         <ul>

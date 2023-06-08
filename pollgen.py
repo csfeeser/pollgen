@@ -97,10 +97,28 @@ def result(course):
             else:
                 figures_present= False
 
-            return render_template('choices.html', questions=yaml_data, figures_present= figures_present, figures_path= figures_repo)
+            return render_template('choices.html', course=course, questions=yaml_data, figures_present= figures_present, figures_path= figures_repo)
 
         else:
             return f'Failed to retrieve the YAML data for {course}.'
+
+@app.route("/day1/<course>")
+def download_atp(course):
+    url = f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/main/{DIRECTORY_PATH}/day1/{course}-day1.atp"
+
+    response = requests.get(url)
+    content = response.content
+
+    filename = f"{course}-day1.atp"
+
+    file_stream = io.BytesIO(content)
+
+    return send_file(
+        file_stream,
+        mimetype="application/octet-stream",
+        as_attachment=True,
+        download_name=filename
+    )
 
 @app.route('/download', methods=['POST'])
 def download():
